@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com), Kevin Ross
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisablesBrowserWarn(Signature):
     name = "disables_browser_warn"
-    description = "Attempts to disable browser security warnings"
+    description = "尝试禁止浏览器安全报警"
     severity = 3
     categories = ["generic", "banker", "clickfraud"]
     authors = ["Optiv", "Kevin Ross"]

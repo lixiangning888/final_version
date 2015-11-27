@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Prinimalka(Signature):
     name = "banker_prinimalka"
-    description = "Detected Prinimalka banking trojan"
+    description = "检测到Prinimalka banking 木马"
     severity = 3
     categories = ["banker"]
     families = ["prinimalka"]

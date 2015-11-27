@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Procmem_Yara(Signature):
     name = "procmem_yara"
-    description = "Yara rule detections observed from a process memory dump"
+    description = "在进程内存转存文件中检测到Yara规则击中"
     severity = 1
     authors = ["KillerInstinct"]
     minimum = "0.5"

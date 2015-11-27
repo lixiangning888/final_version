@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -11,7 +12,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class EncryptedIOC(Signature):
     name = "encrypted_ioc"
-    description = "At least one IP Address, Domain, or File Name was found in a crypto call"
+    description = "在加密调用中发现至少一个IP地址，域名，或文件名"
     severity = 2
     weight = 0
     categories = ["crypto"]

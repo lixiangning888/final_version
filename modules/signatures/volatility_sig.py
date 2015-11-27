@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2010-2013 Cuckoo Sandbox Developers.
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -7,7 +8,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VolMalfind1(Signature):
     name = "volatility_malfind_1"
-    description = "Malfind detects an injected process"
+    description = "Malfind检测到被注入的进程"
     severity = 2
     alert = False
     categories = ["generic"]
@@ -27,7 +28,7 @@ class VolMalfind1(Signature):
 
 class VolMalfind2(Signature):
     name = "volatility_malfind_2"
-    description = "Malfind detects more than 3 injected processes"
+    description = "Malfind检测到超过3个被注入的进程"
     severity = 3
     alert = False   # Very suspicious, but has detection on clean files
     categories = ["generic"]
@@ -51,8 +52,7 @@ class VolMalfind2(Signature):
 
 class VolLdrModules1(Signature):
     name = "volatility_ldrmodules_1"
-    description = "PEB modified to hide loaded\
-             modules. Dll very likely not loaded by LoadLibrary"
+    description = "更改PEB以隐藏加载的模块，DLL很可能没有被LoadLibrary加载"
     severity = 3
     alert = False   # Skype seems to do that...
     categories = ["generic"]
@@ -80,8 +80,7 @@ class VolLdrModules1(Signature):
 
 class VolLdrModules2(Signature):
     name = "volatility_ldrmodules_2"
-    description = "PEB modified to hide loaded modules.\
-         Not path name. Dll very likely not loaded by LoadLibrary"
+    description = "更改PEB以隐藏加载的模块，而不是路径名，DLL很可能没有被LoadLibrary加载"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -104,7 +103,7 @@ class VolLdrModules2(Signature):
 
 class VolDevicetree1(Signature):
     name = "volatility_devicetree_1"
-    description = "Device driver without name"
+    description = "设备驱动器没有名称"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -128,7 +127,7 @@ class VolDevicetree1(Signature):
 
 class VolSvcscan1(Signature):
     name = "volatility_svcscan_1"
-    description = "Stopped Firewall service"
+    description = "停止了防火墙服务"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -151,7 +150,7 @@ class VolSvcscan1(Signature):
 
 class VolSvcscan2(Signature):
     name = "volatility_svcscan_2"
-    description = "Stopped Security Center service"
+    description = "停止了安全中心服务"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -174,7 +173,7 @@ class VolSvcscan2(Signature):
 
 class VolSvcscan3(Signature):
     name = "volatility_svcscan_3"
-    description = "Stopped Application Layer Gateway service"
+    description = "停止了应用层网关服务"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -197,7 +196,7 @@ class VolSvcscan3(Signature):
 
 class VolModscan1(Signature):
     name = "volatility_modscan_1"
-    description = "Kernel module without a name"
+    description = "内核模块没有名称"
     severity = 3
     alert = True
     categories = ["generic"]
@@ -219,7 +218,7 @@ class VolModscan1(Signature):
 
 class VolHandles1(Signature):
     name = "volatility_handles_1"
-    description = "Lots of threads in other processes"
+    description = "在其他进程中有很多线程"
     severity = 2
     alert = False
     categories = ["generic"]

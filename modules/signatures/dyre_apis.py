@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com), KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Dyre_APIs(Signature):
     name = "dyre_behavior"
-    description = "Exhibits behavior characteristic of Dyre malware"
+    description = "展现出Dyre恶意软件的行为特征"
     weight = 3
     severity = 3
     categories = ["banker", "trojan"]
@@ -111,12 +112,12 @@ class Dyre_APIs(Signature):
             ret = True
             if (self.cryptoapis or self.syncapis) and networkret:
                 self.confidence = 100
-                self.description = "Exhibits behaviorial and network characteristics of Upatre+Dyre/Mini-Dyre malware"
+                self.description = "展现Upatre+Dyre/Mini-Dyre恶意软件的行为和网络特征"
                 for camp in campaign:
                     self.data.append({"Campaign": camp})
 
             elif networkret:
-                self.description = "Exhibits network behavior characteristic of Upatre+Dyre/Mini-Dyre malware"
+                self.description = "展现Upatre+Dyre/Mini-Dyre恶意软件的网络行为特征"
                 for camp in campaign:
                     self.data.append({"Campaign": camp})
 

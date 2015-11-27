@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CriticalProcess(Signature):
     name = "critical_process"
-    description = "A process was set to shut the system down when terminated"
+    description = "一个进程被设置为终止时关闭系统"
     severity = 3
     categories = ["generic"]
     authors = ["Optiv"]

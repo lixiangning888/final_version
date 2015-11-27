@@ -1,4 +1,5 @@
-# Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
+# -*- coding: utf-8 -*-
+# Copyright (C) 2014 Accuvant, Inc. (bspengler@accuvant.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
@@ -11,7 +12,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiAVDetectFile(Signature):
     name = "antiav_detectfile"
-    description = "Attempts to identify installed AV products by installation directory"
+    description = "尝试通过安装目录检测已安装的反病毒软件"
     severity = 3
     categories = ["anti-av"]
     authors = ["Optiv"]

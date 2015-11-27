@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class JS_Phish(Signature):
     name = "js_phish"
-    description = "Executes JavaScript with known {0} related phishing lures."
+    description = "执行与已知 {0} 相关钓鱼欺诈的JavaScript"
     weight = 2
     severity = 3
     categories = ["phishing"]

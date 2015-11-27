@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Virtualcheck_JS(Signature):
     name = "virtualcheck_js"
-    description = "Executes obfuscated JavaScript checking for sandbox or VM environment"
+    description = "执行伪装过的JavaScript检查是否存在沙盒(sandbox)系统或虚拟机(VM)环境"
     weight = 3
     severity = 3
     categories = ["exploit_kit", "evasion"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiAnalysisDetectFile(Signature):
     name = "antianalysis_detectfile"
-    description = "Attempts to identify installed analysis tools by a known file location"
+    description = "尝试通过已知文件位置识别是否安装了恶意软件分析工具"
     severity = 3
     categories = ["anti-analysis"]
     authors = ["KillerInstinct"]

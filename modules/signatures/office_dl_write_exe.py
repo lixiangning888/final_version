@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Will Metcalf william.metcalf@gmail.com 
 #
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
@@ -13,7 +14,7 @@ except ImportError:
 
 class OfficeDLWritesEXE(Signature):
     name = "office_dl_write_exe"
-    description = "Likely Malicious Office Document DL/Write EXE to disk"
+    description = "可能是恶意的Office文档DL/写入EXE文件到磁盘"
     severity = 3 
     categories = ["virus"]
     authors = ["Will Metcalf"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class WineDetectReg(Signature):
     name = "antiemu_wine_reg"
-    description = "Detects the presence of Wine emulator via registry key"
+    description = "通过注册表键检测是否存在Wine模拟器"
     severity = 3
     categories = ["anti-emulation"]
     authors = ["nex"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Webmail_Phish(Signature):
     name = "webmail_phish"
-    description = "Network activity contains known webmail credential phishing indicators."
+    description = "网络活动包含常见的电子邮件信息欺诈特征"
     severity = 3
     categories = ["network"]
     authors = ["KillerInstinct"]

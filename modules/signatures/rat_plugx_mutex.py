@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PlugxMutexes(Signature):
     name = "rat_plugx_mutexes"
-    description = "Creates known PlugX mutexes"
+    description = "创建常见PlugX互斥量（mutexes）"
     severity = 3
     categories = ["rat"]
     families = ["plugx"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMSystem(Signature):
     name = "antivm_generic_system"
-    description = "Checks the system manufacturer, likely for anti-virtualization"
+    description = "检查系统制造商，可能被用来实现反虚拟机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["Optiv"]

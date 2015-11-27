@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012, 2015 Michael Boman (@mboman), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class KnownVirustotal(Signature):
     name = "antivirus_virustotal"
-    description = " has been identified by at least one Antivirus on VirusTotal as malicious"
+    description = "已被至少一个VirusTotal上的反病毒引擎检测为病毒"
     confidence = 50
     severity = 2
     categories = ["antivirus"]
@@ -34,7 +35,7 @@ class KnownVirustotal(Signature):
                         self.confidence = 75
                         self.weight = positives - 4
                     if positives > 10:
-                        self.description = " has been identified by at least ten Antiviruses on VirusTotal as malicious"
+                        self.description = "已被至少十个VirusTotal上的反病毒引擎检测为病毒"
                         self.severity = 3
                         self.confidence = 100
                         self.weight = positives
@@ -42,7 +43,7 @@ class KnownVirustotal(Signature):
                         if signature["detected"]:
                             self.data.append({engine : signature["result"]})
                     if self.results["info"]["category"] == "file":
-                        self.description = "File" + self.description
+                        self.description = "文件" + self.description
                     else:
                         self.description = "URL" + self.description
                     return True

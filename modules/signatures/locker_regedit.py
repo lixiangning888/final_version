@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Thomas "stacks" Birn (@stacksth), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisableRegedit(Signature):
     name = "locker_regedit"
-    description = "Disables Windows' Registry Editor"
+    description = "禁止Windows的注册表编辑器"
     severity = 3
     categories = ["locker"]
     authors = ["Thomas Birn", "nex", "Optiv"]

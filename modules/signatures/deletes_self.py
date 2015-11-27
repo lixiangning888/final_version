@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DeletesSelf(Signature):
     name = "deletes_self"
-    description = "Deletes its original binary from disk"
+    description = "从磁盘上删除自身的原始二进制"
     severity = 3
     categories = ["persistence"]
     authors = ["Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SetsAutoconfigURL(Signature):
     name = "sets_autoconfig_url"
-    description = "Sets an Autoconfig URL, likely to hijack browser settings."
+    description = "设置一个Autoconfig URL链接，可能被用来劫持浏览器设置"
     severity = 3
     categories = ["network"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 David Maciejak
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkICMP(Signature):
     name = "network_icmp"
-    description = "Generates some ICMP traffic"
+    description = "生成了一些ICMP流量"
     severity = 3
     categories = ["icmp"]
     authors = ["David Maciejak"]

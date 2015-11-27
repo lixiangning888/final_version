@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DeepFreezeMutex(Signature):
     name = "deepfreeze_mutex"
-    description = "Checks for a known DeepFreeze Frozen State Mutex"
+    description = "检查常见的DeepFreeze冻结状态互斥量（Mutex）"
     severity = 3
     categories = ["anti-sandbox"]
     authors = ["KillerInstinct"]

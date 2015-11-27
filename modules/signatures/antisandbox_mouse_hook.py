@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class HookMouse(Signature):
     name = "antisandbox_mouse_hook"
-    description = "Installs an hook procedure to monitor for mouse events"
+    description = "安装挂钩程序监控鼠标事件"
     severity = 3
     categories = ["hooking", "anti-sandbox"]
     authors = ["nex"]

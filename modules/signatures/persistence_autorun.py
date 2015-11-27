@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2012,2014,2015 Michael Boman (@mboman), Optiv, Inc. (brad.spengler@optiv.com)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2012,2014,2015 Michael Boman (@mboman), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free Software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -26,7 +27,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Autorun(Signature):
     name = "persistence_autorun"
-    description = "Installs itself for autorun at Windows startup"
+    description = "将自己装载到Windows开机自动启动项目"
     severity = 3
     categories = ["persistence"]
     authors = ["Michael Boman", "nex", "securitykitten", "Optiv", "KillerInstinct"]

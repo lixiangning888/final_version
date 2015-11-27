@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Secure_Login_Phish(Signature):
     name = "secure_login_phish"
-    description = "'{0}' in HTML Title but connection is not HTTPS. Possibly indicative of phishing."
+    description = "'{0}' HTML标题包含’安全登录(Secure Login)’,但连接并非HTTPS，常见于网络欺诈"
     severity = 2
     categories = ["phish"]
     authors = ["KillerInstinct"]

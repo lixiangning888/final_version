@@ -6,6 +6,9 @@
               <li class="active"><a href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>恶意软件分析</a></li>
               <li><a href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>Cuckoo沙盒</a></li>
               <li><a href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>VirusTotal</a></li>
+              <li><a href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>哈希(Hash)</a></li>
+              <li><a href="#tab5" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>模糊哈希</a></li>
+              <li><a href="#tab6" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>Yara</a></li>
          </ul>
          <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
@@ -21,11 +24,42 @@
                         <p>Cuckoo沙盒由一个主机系统（运行管理程序）和一系列客户端系统（运行虚拟机分析）组成。主机系统包含了管理各种恶意软件分析的核心组件，而客户端系统装载了可以运行和分析恶意软件的隔离环境。Cuckoo沙盒运行一个中央管理程序来协调样本程序的执行和分析，每一次分析都会被运行在一个干净和隔离的虚拟机系统。</p>
 
                         <p>想了解更多关于Cuckoo沙盒的信息和动态，请关注：<a href="http://www.cuckoosandbox.org">Cuckoo Sandboxing</a>。  </p>
+
+			<p>Optiv公司在Cuckoo沙盒的基础上做出了大量修改和优化，在General Public License (GPL)协议下，提供了一个改动版本的Cuckoo。与标准的cuckoo沙盒相比，改动版本的cuckoo增加了大量的功能，和提供了更大的扩展性。关于改动版本的Cuckoo的具体信息，请参考：<a href="https://github.com/brad-accuvant/cuckoo-modified">Cuckoo-modifed</a>。</p>
+
+			<p>魔盾安全扫描大量运用了改动版本的Cuckoo提供的功能和扩展性，并与Optiv公司一样，对魔盾安全扫描的代码遵循GPL协议。</p>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <p>VirusTotal （Google的子公司）是一个提供免费的文件和URL病毒扫描服务的网站。它与传统杀毒软件的不同之处是它通过多种反病毒引擎扫描文件，以判断文件是否被病毒, 蠕虫, 木马, 以及各类恶意软件感染。这样大大减少了杀毒软件误报或未检出病毒的概率，其检测率优于使用单一产品。目前其反病毒引擎已经多达50种以上。</p>
 
                         <p>更多关于VirusTotal的信息， 请访问：<a href="https://www.virustotal.com">VirusTotal</a>。  </p> 
+                    </div>
+                    <div class="tab-pane fade" id="tab4">
+                        <p>哈希（Hash）是一种单项散列或单项密码体制，它是一个从明文到密文的不可逆函数，也就是说，是无法解密的。通常应用在只需要加密、不需要解密的特殊应用场合。哈希（Hash）函数H(M)作用于一任意长度的消息M，它返回一固定长度的散列值h:h=H(M)作为初始消息的独一无二的“数字指纹”，从而能保证数据的完整性和惟一性。在信息安全和恶意软件分析领域，我们通常会计算样本文件的哈希值，并通过比较样本文件的哈希值进行文件扫描的搜索或者唯一性检查。</p>
+
+			<p>魔盾安全扫描对用户提交的每一个样本文件都通过不同的加密算法计算了多种业界常用的哈希值，包括MD5, SHA1, SHA256, 及SHA512。</p>
+			
+			<p>MD5即Message-Digest Algorithm 5（信息-摘要算法 5），用于确保信息传输完整一致。是计算机广泛使用的哈希算法之一（又译摘要算法、散列算法）。 MD5是输入不定长度信息，输出固定长度128-bits的算法。经过程序流程，生成四个32位数据，最后联合起来成为一个128-bits散列。基本方式为，求余、取余、调整长度、与链接变量进行循环运算。得出结果。MD5的前身有MD2、MD3和MD4。MD5一度被广泛应用于安全领域。但是由于MD5的弱点被不断发现以及计算机能力不断的提升，现在已经可以构造两个具有相同MD5的信息，使本算法不再适合当前的安全环境。</p>
+
+			<p>SHA-1在许多安全协议中广为使用，包括TLS和SSL、PGP、SSH、S/MIME和IPsec，曾被视为是MD5（更早之前被广为使用的散列函数）的后继者。但SHA-1的安全性如今也被密码学家严重质疑。</p>
+
+			<p>SHA-224、SHA-256、SHA-384，和SHA-512并称为SHA-2。SHA-2并没有接受像SHA-1一样的公众密码社区做详细的检验，所以它们的密码安全性还不被大家广泛的信任。SHA-2的算法与SHA-1基本上仍然相似，目前还尚未出现对SHA-2有效的攻击。SHA256当前被广泛应用于恶意软件分析中的文件样本唯一性标识及搜索。</p>
+
+			<p>魔盾安全扫描还对用户提交的每一个样本文件都计算了CRC32。 CRC, 即循环冗余校验码（Cyclic Redundancy Check), 是数据通信领域中最常用的一种查错校验码，其特征是信息字段和校验字段的长度可以任意选定。</p>
+		    </div>
+                    <div class="tab-pane fade" id="tab5">
+                        <p>模糊哈希算法又叫基于内容分割的分片分片哈希算法（context triggered piecewise hashing, CTPH），主要用于文件的相似性比较。2006年，Jesse Kornblum 提出CTPH，并给出一个名为spamsum的算法实例。随后，Jason Sherman开发了ssdeep 工具以实现这一算法。该算法最初用于取证，后来被用于恶意代码检测，最近又有用于开源软件漏洞挖掘等。</p>
+
+			<p>模糊哈希的主要原理是，使用一个弱哈希计算文件局部内容，在特定条件下对文件进行分片，然后使用一个强哈希对文件每片计算哈希值，取这些值的一部分并连接起来，与分片条件一起构成一个模糊哈希结果。使用一个字符串相似性对比算法判断两个模糊哈希值的相似度有多少，从而判断两个文件的相似程度。对文件的部分变化（包括在多处修改、增加、删除部分内容），使用模糊哈希均能发现与源文件的相似关系，是目前判断相似性较好的一种方法。</p>
+			
+			<p>魔盾安全扫描对用户提交的每一个样本文件都进行了Ssdeep的计算，Ssdeep值可以用于恶意软件的变种检测。想了解Ssdeep的最新内容，请访问 <a href="http://ssdeep.sourceforge.net">Ssdeep</a></p>
+		    </div>
+                    <div class="tab-pane fade" id="tab6">
+		        <p>YARA是一款旨在帮助恶意软件分析者识别和分类恶意软件样本的开源工具（由virustotal的软件工程师Victor M. Alvarezk开发）。Yara是一个特别灵活的恶意软件识别和分类引擎，可以利用YARA创建规则以检测字符串、入侵序列、正则表达式、字节模式等。YARA的每一条描述或规则都由一系列字符串和一个布尔型表达式构成，并阐述其逻辑。使用YARA可以基于文本或二进制模式创建恶意软件类型描述信息，当然也可以是其他匹配信息。</p>
+
+			<p>魔盾安全扫描装载了Yara扫描引擎，并集成了Yara全球社区及魔盾安全扫描开发的Yara规则，以帮助用户对恶意软件的特征进行判断。</p>
+
+			<p>想了解Yara的具体信息，请访问：<a href="https://code.google.com/p/yara-project">Yara 项目</a>， 或 <a href="https://github.com/Yara-Rules/rules"> Yara 规则</a>。</p>
                     </div>
          </div>
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ProcessNeeded(Signature):
     name = "process_needed"
-    description = "Repeatedly searches for a not-found process, may want to run with startbrowser=1 option"
+    description = "对一个无法找到的进程进行重复搜索，可能希望以startbrowser=1选项运行"
     severity = 2
     categories = ["generic"]
     authors = ["Optiv"]

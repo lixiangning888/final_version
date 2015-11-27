@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Multiple_UA(Signature):
     name = "multiple_useragents"
-    description = "Network activity contains more than one unique useragent."
+    description = "网络活动包含了一个以上的不重复的用户代理"
     severity = 3
     categories = ["network"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2014 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DirtJumper(Signature):
     name = "bot_dirtjumper"
-    description = "Recognized to be a DirtJumper bot"
+    description = "被识别为DirtJumper自动脚本病毒（DirtJumper bot）"
     severity = 3
     categories = ["bot", "ddos"]
     families = ["dirtjumper"]

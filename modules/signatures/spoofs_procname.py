@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SpoofsProcname(Signature):
     name = "spoofs_procname"
-    description = "Spoofs its process name and/or associated pathname to appear as a legitimate process"
+    description = "对自己的进程名和／或相关路径名进行欺骗以模仿正常的进程"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

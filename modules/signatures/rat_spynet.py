@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SpynetRat(Signature):
     name = "rat_spynet"
-    description = "Creates known SpyNet mutexes and/or registry changes."
+    description = "创建常见SpyNet互斥量（mutexes）或相应的注册表变动"
     severity = 3
     categories = ["rat"]
     families = ["spynet"]

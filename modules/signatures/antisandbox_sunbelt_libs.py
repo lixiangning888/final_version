@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SunbeltDetectLibs(Signature):
     name = "antisandbox_sunbelt_libs"
-    description = "Detects SunBelt Sandbox through the presence of a library"
+    description = "通过库文件检测是否存在SunBelt沙盒系统"
     severity = 3
     categories = ["anti-sandbox"]
     authors = ["Optiv"]

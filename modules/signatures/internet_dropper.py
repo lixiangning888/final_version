@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Internet_Dropper(Signature):
     name = "internet_dropper"
-    description = "Behavior consistent with a dropper attempting to download the next stage."
+    description = "与尝试对后续步骤进行下载的木马dropper行为一致"
     severity = 3
     categories = ["network"]
     authors = ["KillerInstinct"]

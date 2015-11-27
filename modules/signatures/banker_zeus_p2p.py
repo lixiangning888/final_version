@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014,2015 Robby Zeitfuchs (@robbyFux) Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ZeusP2P(Signature):
     name = "banker_zeus_p2p"
-    description = "Zeus P2P (Banking Trojan)"
+    description = "Zeus P2P (Banking 木马)"
     severity = 3
     categories = ["banker"]
     families = ["zeus"]

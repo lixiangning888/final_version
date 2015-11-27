@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Unhook(Signature):
     name = "antisandbox_unhook"
-    description = "Tries to unhook or modify Windows functions monitored by Cuckoo"
+    description = "尝试断开连接或更改Cuckoo监控的Windows功能"
     severity = 3
     confidence = 60
     categories = ["anti-sandbox"]

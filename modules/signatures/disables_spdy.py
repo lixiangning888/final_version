@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisablesSPDY(Signature):
     name = "disables_spdy"
-    description = "Attempts to disable SPDY support in Firefox to improve web infostealing capability"
+    description = "尝试禁止火狐（Firefox）浏览器的SPDY服务以增强网络信息窃取的能力"
     severity = 3
     weight = 2
     categories = ["generic"]

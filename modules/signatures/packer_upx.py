@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Michael Boman (@mboman), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class UPXCompressed(Signature):
     name = "packer_upx"
-    description = "The executable is compressed using UPX"
+    description = "可执行文件被使用UPX压缩"
     severity = 2
     categories = ["packer"]
     authors = ["Michael Boman", "nex", "Optiv"]

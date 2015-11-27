@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -11,7 +12,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Geodo(Signature):
     name = "geodo_banking_trojan"
-    description = "Geodo Banking Trojan"
+    description = "Geodo Banking 木马"
     severity = 3
     categories = ["Banking", "Trojan"]
     families = ["Geodo","Emotet"]

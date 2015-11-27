@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StealthWebHistory(Signature):
     name = "stealth_webhistory"
-    description = "Clears web history"
+    description = "清除网络历史纪录"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

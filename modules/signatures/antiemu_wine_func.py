@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class WineDetectFunc(Signature):
     name = "antiemu_wine_func"
-    description = "Detects the presence of Wine emulator via function name"
+    description = "通过功能名检测是否存在Wine模拟器"
     severity = 3
     categories = ["anti-emulation"]
     authors = ["Optiv"]

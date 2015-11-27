@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -24,7 +25,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class WHOIS_Create(Signature):
     name = "whois_create"
-    description = "The target URL domain was recently created. ({0} days ago)"
+    description = "目标URL域名为最近注册 ({0} 天以前)"
     severity = 2
     categories = ["network"]
     authors = ["KillerInstinct"]

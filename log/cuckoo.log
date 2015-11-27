@@ -10227,3 +10227,184 @@ UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 3: ordinal 
 2015-11-26 17:16:19,212 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Failed to generate PDF report: Neither wkhtmltopdf nor Weasyprint Python library are installed
 2015-11-26 17:16:23,367 [lib.cuckoo.core.scheduler] INFO: Task #9: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/9)
 2015-11-26 17:16:23,378 [lib.cuckoo.core.scheduler] INFO: Task #9: analysis procedure completed
+2015-11-27 12:50:33,016 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_dBNtKr/Invoice 2.doc" (task=10)
+2015-11-27 12:50:33,036 [lib.cuckoo.core.scheduler] INFO: Task #10: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 12:57:33,953 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 5411 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/10/dump.pcap)
+2015-11-27 12:57:33,955 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 12:58:15,797 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 12:58:42,754 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 12:58:50,056 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Failed to generate PDF report: Neither wkhtmltopdf nor Weasyprint Python library are installed
+2015-11-27 12:58:54,906 [lib.cuckoo.core.scheduler] INFO: Task #10: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/10)
+2015-11-27 12:58:54,920 [lib.cuckoo.core.scheduler] INFO: Task #10: analysis procedure completed
+2015-11-27 13:03:06,646 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_TFv3rj/Faturaniz.pdf" (task=11)
+2015-11-27 13:03:06,671 [lib.cuckoo.core.scheduler] INFO: Task #11: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 13:09:52,804 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 5736 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/11/dump.pcap)
+2015-11-27 13:09:52,806 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 13:11:57,954 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 13:12:15,474 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 13:12:22,106 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Failed to generate PDF report: Neither wkhtmltopdf nor Weasyprint Python library are installed
+2015-11-27 13:12:25,797 [lib.cuckoo.core.scheduler] INFO: Task #11: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/11)
+2015-11-27 13:12:25,806 [lib.cuckoo.core.scheduler] INFO: Task #11: analysis procedure completed
+2015-11-27 13:43:14,572 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_h5vh3y/signtool.exe" (task=12)
+2015-11-27 13:43:14,595 [lib.cuckoo.core.scheduler] INFO: Task #12: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 13:50:05,131 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 6393 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/12/dump.pcap)
+2015-11-27 13:50:05,132 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 13:50:16,523 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 13:50:17,005 [Processing.Pcap] WARNING: The PCAP file does not exist at path "/home/bruce/cuckoo/storage/analyses/12/dump_sorted.pcap".
+2015-11-27 13:50:20,239 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 13:50:21,076 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Failed to generate PDF report: Neither wkhtmltopdf nor Weasyprint Python library are installed
+2015-11-27 13:50:21,193 [lib.cuckoo.core.scheduler] INFO: Task #12: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/12)
+2015-11-27 13:50:21,204 [lib.cuckoo.core.scheduler] INFO: Task #12: analysis procedure completed
+2015-11-27 16:00:23,286 [lib.cuckoo.core.scheduler] INFO: Starting analysis of URL "www.jdg88.com" (task=13)
+2015-11-27 16:00:23,305 [lib.cuckoo.core.scheduler] INFO: Task #13: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 16:07:20,121 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 7166 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/13/dump.pcap)
+2015-11-27 16:07:20,124 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 16:09:24,099 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 16:09:38,590 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 16:09:43,661 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Failed to generate PDF report: Neither wkhtmltopdf nor Weasyprint Python library are installed
+2015-11-27 16:09:47,481 [lib.cuckoo.core.scheduler] INFO: Task #13: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/13)
+2015-11-27 16:09:47,492 [lib.cuckoo.core.scheduler] INFO: Task #13: analysis procedure completed
+2015-11-27 16:21:17,676 [lib.cuckoo.core.scheduler] INFO: Using "kvm" machine manager with max_analysis_count=0, max_machines_count=0, and max_vmstartup_count=10
+2015-11-27 16:21:17,749 [lib.cuckoo.core.scheduler] INFO: Loaded 2 machine/s
+2015-11-27 16:21:17,758 [lib.cuckoo.core.scheduler] INFO: Waiting for analysis tasks.
+2015-11-27 16:23:35,672 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_roIzSz/New Terms of Use (Naukrigulf).exe" (task=14)
+2015-11-27 16:23:35,713 [lib.cuckoo.core.scheduler] INFO: Task #14: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 16:24:15,134 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_Lh_Ox7/QQ农场偷菜圣手_Setup.exe" (task=15)
+2015-11-27 16:24:15,318 [lib.cuckoo.core.scheduler] INFO: Task #15: acquired machine win7-sp1-x64 (label=win7-sp1-x64)
+2015-11-27 16:24:16,393 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 7507 (interface=virbr0, host=192.168.122.69, dump path=/home/bruce/cuckoo/storage/analyses/15/dump.pcap)
+2015-11-27 16:24:16,395 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=win7-sp1-x64, ip=192.168.122.69)
+2015-11-27 16:26:46,980 [lib.cuckoo.core.guest] INFO: win7-sp1-x64: analysis completed successfully
+2015-11-27 16:26:58,558 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 16:26:58,646 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTML":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtml.py", line 65, in run
+    html = tpl.render({"results": results, "summary_report" : False})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 6, in block "content"
+    {% include "sections/file.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/file.html", line 9, in top-level template code
+    <td><span class="mono" style="word-wrap: break-word;">{{results.target.file.name}}</span></td>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 2: ordinal not in range(128)
+2015-11-27 16:26:58,849 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTMLSummary":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtmlsummary.py", line 78, in run
+    html = tpl.render({"results": results, "summary_report": True})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 6, in block "content"
+    {% include "sections/file.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/file.html", line 9, in top-level template code
+    <td><span class="mono" style="word-wrap: break-word;">{{results.target.file.name}}</span></td>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 2: ordinal not in range(128)
+2015-11-27 16:26:58,849 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Unable to open summary HTML report to convert to PDF: Ensure reporthtmlsummary is enabled in reporting.conf
+2015-11-27 16:26:59,576 [lib.cuckoo.core.scheduler] INFO: Task #15: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/15)
+2015-11-27 16:26:59,585 [lib.cuckoo.core.scheduler] INFO: Task #15: analysis procedure completed
+2015-11-27 16:30:25,829 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 7663 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/14/dump.pcap)
+2015-11-27 16:30:25,831 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 16:32:13,709 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 16:32:22,668 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 16:32:22,770 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTML":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtml.py", line 65, in run
+    html = tpl.render({"results": results, "summary_report" : False})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 10, in block "content"
+    {% include "sections/signatures.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/signatures.html", line 16, in top-level template code
+    <b>{{sign.description}}</b>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 0: ordinal not in range(128)
+2015-11-27 16:32:22,902 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTMLSummary":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtmlsummary.py", line 78, in run
+    html = tpl.render({"results": results, "summary_report": True})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 10, in block "content"
+    {% include "sections/signatures.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/signatures.html", line 16, in top-level template code
+    <b>{{sign.description}}</b>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 0: ordinal not in range(128)
+2015-11-27 16:32:22,902 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Unable to open summary HTML report to convert to PDF: Ensure reporthtmlsummary is enabled in reporting.conf
+2015-11-27 16:32:24,150 [lib.cuckoo.core.scheduler] INFO: Task #14: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/14)
+2015-11-27 16:32:24,159 [lib.cuckoo.core.scheduler] INFO: Task #14: analysis procedure completed
+2015-11-27 17:52:46,617 [lib.cuckoo.core.scheduler] INFO: Starting analysis of FILE "/tmp/cuckoo-tmp/upload_Z5mM6t/Helpdesk.pdf" (task=16)
+2015-11-27 17:52:46,637 [lib.cuckoo.core.scheduler] INFO: Task #16: acquired machine winxp-sp3 (label=winxp-sp3)
+2015-11-27 18:00:03,213 [modules.auxiliary.sniffer] INFO: Started sniffer with PID 14889 (interface=virbr0, host=192.168.122.23, dump path=/home/bruce/cuckoo/storage/analyses/16/dump.pcap)
+2015-11-27 18:00:03,216 [lib.cuckoo.core.guest] INFO: Starting analysis on guest (id=winxp-sp3, ip=192.168.122.23)
+2015-11-27 18:02:07,495 [lib.cuckoo.core.guest] INFO: winxp-sp3: analysis completed successfully
+2015-11-27 18:02:24,568 [lib.cuckoo.core.plugins] WARNING: The reporting module "Malheur" returned the following error: Failed to perform Malheur classification: [Errno 2] No such file or directory
+2015-11-27 18:02:24,674 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTML":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtml.py", line 65, in run
+    html = tpl.render({"results": results, "summary_report" : False})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 10, in block "content"
+    {% include "sections/signatures.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/signatures.html", line 16, in top-level template code
+    <b>{{sign.description}}</b>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 3: ordinal not in range(128)
+2015-11-27 18:02:25,633 [lib.cuckoo.core.plugins] ERROR: Failed to run the reporting module "ReportHTMLSummary":
+Traceback (most recent call last):
+  File "/home/bruce/cuckoo/lib/cuckoo/core/plugins.py", line 624, in process
+    current.run(self.results)
+  File "/home/bruce/cuckoo/modules/reporting/reporthtmlsummary.py", line 78, in run
+    html = tpl.render({"results": results, "summary_report": True})
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python2.7/dist-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bruce/cuckoo/data/html/report.html", line 1, in top-level template code
+    {% extends "base-report.html" %}
+  File "/home/bruce/cuckoo/data/html/base-report.html", line 131, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/bruce/cuckoo/data/html/report.html", line 10, in block "content"
+    {% include "sections/signatures.html" %}
+  File "/home/bruce/cuckoo/data/html/sections/signatures.html", line 16, in top-level template code
+    <b>{{sign.description}}</b>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe6 in position 3: ordinal not in range(128)
+2015-11-27 18:02:25,633 [lib.cuckoo.core.plugins] WARNING: The reporting module "ReportPDF" returned the following error: Unable to open summary HTML report to convert to PDF: Ensure reporthtmlsummary is enabled in reporting.conf
+2015-11-27 18:02:26,692 [lib.cuckoo.core.scheduler] INFO: Task #16: reports generation completed (path=/home/bruce/cuckoo/storage/analyses/16)
+2015-11-27 18:02:26,725 [lib.cuckoo.core.scheduler] INFO: Task #16: analysis procedure completed

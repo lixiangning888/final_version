@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Will Metcalf william.metcalf@gmail.com 
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class KrakenMutexes(Signature):
     name = "bot_kraken_mutexes"
-    description = "Creates known Kraken mutexes"
+    description = "创建常见的Kraken互斥量（mutexes）"
     severity = 3
     categories = ["bot"]
     families = ["kraken"]

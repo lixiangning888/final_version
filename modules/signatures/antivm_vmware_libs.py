@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VMwareDetectLibs(Signature):
     name = "antivm_vmware_libs"
-    description = "Detects VMware through the presence of a library"
+    description = "通过VMware库的存在检测VMware"
     severity = 3
     categories = ["anti-vm"]
     authors = ["Optiv"]

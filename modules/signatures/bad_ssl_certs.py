@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BadSSLCerts(Signature):
     name = "bad_ssl_certs"
-    description = "A known bad/malicious SSL cert was accessed"
+    description = "一个常见的恶意SSL证书被访问"
     severity = 3
     weight = 3
     categories = ["network"]

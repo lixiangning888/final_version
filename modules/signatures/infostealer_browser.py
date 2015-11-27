@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BrowserStealer(Signature):
     name = "infostealer_browser"
-    description = "Steals private information from local Internet browsers"
+    description = "从本地网络浏览器中窃取个人信息"
     severity = 3
     confidence = 30
     categories = ["infostealer"]

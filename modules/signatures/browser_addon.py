@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ except ImportError:
 
 class BrowserAddon(Signature):
     name = "browser_addon"
-    description = "Installs a browser addon or extension"
+    description = "安装浏览器插件或扩展组件"
     severity = 2
     categories = ["browser", "adware"]
     authors = ["Kevin Ross"]

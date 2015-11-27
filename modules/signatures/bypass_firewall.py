@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Anderson Tamborim (@y2h4ck)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -19,7 +20,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BypassFirewall(Signature):
     name = "bypass_firewall"
-    description = "Operates on local firewall's policies and settings"
+    description = "对本地防火墙的策略和设置进行操作"
     severity = 3
     categories = ["bypass"]
     authors = ["Anderson Tamborim", "nex"]

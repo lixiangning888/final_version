@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 KillerInstinct
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Kibex_APIs(Signature):
     name = "kibex_behavior"
-    description = "Exhibits behavior characteristic of Kibex Spyware"
+    description = "展现Kibex间谍软件(Kibex Spyware)行为特征"
     severity = 3
     references = [
         "http://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/tspy_kibex.a",

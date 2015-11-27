@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SetupAPIDiskInformation(Signature):
     name = "antivm_generic_disk_setupapi"
-    description = "Queries information on disks for anti-virtualization via Device Information APIs"
+    description = "通过设备信息APIs查询磁盘信息以实现反虚拟机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["Optiv"]

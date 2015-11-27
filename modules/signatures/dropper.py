@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Dropper(Signature):
     name = "dropper"
-    description = "Drops a binary and executes it"
+    description = "投放出一个二进制文件并执行它"
     severity = 2
     confidence = 50
     categories = ["dropper"]

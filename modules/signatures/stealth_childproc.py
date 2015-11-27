@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StealthChildProc(Signature):
     name = "stealth_childproc"
-    description = "Forces a created process to be the child of an unrelated process"
+    description = "强制将一个创建的进程加载为另一个不相关进程的子进程"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

@@ -1,8 +1,9 @@
-﻿from lib.cuckoo.common.abstracts import Signature
+﻿# -*- coding: utf-8 -*-
+from lib.cuckoo.common.abstracts import Signature
 
 class RansomwareExtensions(Signature):
     name = "ransomware_extensions"
-    description = "Appends known ransomware file extensions to files that have been encrypted"
+    description = "对加密文件附加常见勒索软件文件扩展名"
     severity = 3
     categories = ["ransomware"]
     authors = ["Kevin Ross"]

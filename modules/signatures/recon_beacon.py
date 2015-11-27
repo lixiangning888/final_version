@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Recon_Beacon(Signature):
     name = "recon_beacon"
-    description = "A process sent information about the computer to a remote location."
+    description = "一个进程将本机信息传递到一个远程主机"
     weight = 2
     severity = 3
     categories = ["network", "recon"]

@@ -1,4 +1,5 @@
-# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
+# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Accuvant, Inc. (bspengler@accuvant.com)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AvastDetectLibs(Signature):
     name = "antiav_avast_libs"
-    description = "Detects Avast Antivirus through the presence of a library"
+    description = "通过库文件检测是否存在Avast反病毒软件"
     severity = 3
     categories = ["anti-av"]
     authors = ["Optiv"]

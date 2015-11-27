@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012, 2015 Benjamin K., Kevin R., Claudio "nex" Guarnieri
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BuildLangID(Signature):
     name = "origin_langid"
-    description = "Unconventionial binary language"
+    description = "非常规的二进制语言"
     severity = 2
     authors = ["Benjamin K.", "Kevin R.", "nex"]
     categories = ["origin"]

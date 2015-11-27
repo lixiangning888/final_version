@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -32,7 +33,7 @@ def unbuffered_b64decode(data):
 
 class HawkEye_APIs(Signature):
     name = "hawkeye_behavior"
-    description = "Exhibits behavior characteristics of HawkEye keylogger."
+    description = "展现HawkEye键盘记录器(HawkEye keylogger)行为特征"
     severity = 3
     weight = 3
     categories = ["trojan", "keylogger"]

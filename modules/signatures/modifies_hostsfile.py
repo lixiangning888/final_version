@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Modifies_HostFile(Signature):
     name = "modifies_hostfile"
-    description = "The sample wrote data to the system hosts file."
+    description = "样本在系统主机文件中写入数据"
     severity = 3
     categories = ["misc"]
     authors = ["KillerInstinct"]

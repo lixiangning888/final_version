@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PDF_Annot_URLs(Signature):
     name = "pdf_annot_urls"
-    description = "The PDF contains a Link Annotation to a compressed archive or executable file"
+    description = "PDF文件包含一个链接注释指向压缩存档或可执行文件"
     severity = 3
     categories = ["pdf"]
     authors = ["Optiv"]

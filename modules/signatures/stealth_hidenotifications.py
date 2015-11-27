@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StealthHideNotifications(Signature):
     name = "stealth_hide_notifications"
-    description = "Attempts to modify user notification settings"
+    description = "尝试修改用户通知设置"
     severity = 3
     categories = ["stealth"]
     authors = ["Kevin Ross"]

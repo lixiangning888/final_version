@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 jjones
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Drive(Signature):
     name = "bot_drive"
-    description = "Recognized to be a Drive bot"
+    description = "被识别为Drive自动脚本病毒（Drive bot）"
     severity = 3
     categories = ["bot", "ddos"]
     families = ["drive"]

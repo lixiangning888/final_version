@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InjectionExtension(Signature):
     name = "injection_needextension"
-    description = "Attempted to execute a copy of itself but requires an .exe extension to work"
+    description = "尝试执行自身的拷贝，但需要.exe后缀才能工作"
     severity = 3
     categories = ["injection"]
     authors = ["Optiv"]

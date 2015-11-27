@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -18,7 +19,7 @@ import struct
 
 class Chimera_APIs(Signature):
     name = "chimera_behavior"
-    description = "Exhibits behavior characteristic of Chimera ransomware"
+    description = "展现Chimera勒索软件的行为特征"
     weight = 3
     severity = 3
     categories = ["trojan"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -56,7 +57,7 @@ class HandleInfo:
 
 class MimicsFiletime(Signature):
     name = "mimics_filetime"
-    description = "Mimics the file times of a Windows system file"
+    description = "模仿Windows系统文件的文件时间信息"
     severity = 3
     categories = ["generic"]
     authors = ["Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class FleerCivetMutexes(Signature):
     name = "fleercivet_mutex"
-    description = "Creates known FleerCivet mutexes"
+    description = "创建常见FleerCivet互斥量（mutexes）"
     severity = 3
     weight = 5
     categories = ["trojan"]

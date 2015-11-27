@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Office_Suspicious(Signature):
     name = "office_suspicious"
-    description = "The office file created a suspicious child process."
+    description = "Office文件创建了一个可疑的子进程"
     weight = 3
     severity = 3
     categories = ["office"]

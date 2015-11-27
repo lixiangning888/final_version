@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Upatre_APIs(Signature):
     name = "upatre_behavior"
-    description = "Exhibits behavior characteristic of Upatre downloader"
+    description = "展现Upatre downloader恶意软件的行为特征"
     weight = 3
     severity = 3
     categories = ["dropper"]

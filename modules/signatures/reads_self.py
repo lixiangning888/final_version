@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -64,7 +65,7 @@ class ProcResults:
 
 class ReadsSelf(Signature):
     name = "reads_self"
-    description = "Reads data out of its own binary image"
+    description = "从文件自身的二进制镜像中读取数据"
     severity = 2
     confidence = 30
     categories = ["generic"]

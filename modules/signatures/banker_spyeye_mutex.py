@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SpyEyeMutexes(Signature):
     name = "banker_spyeye_mutexes"
-    description = "Creates known SpyEye mutexes"
+    description = "生成常见的SpyEye互斥量（mutexes）"
     severity = 3
     categories = ["banker"]
     families = ["spyeye"]

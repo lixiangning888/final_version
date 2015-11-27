@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 Will Metcalf william.metcalf@gmail.com 
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Will Metcalf william.metcalf@gmail.com 
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BrowserScanbox(Signature):
     name = "browser_scanbox"
-    description = "Scanbox Activity in Browser"
+    description = "浏览器中存在Scanbox活动"
     weight = 3
     severity = 3
     categories = ["exploit"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VMwareDetectMutexes(Signature):
     name = "antivm_vmware_mutexes"
-    description = "Attempts to detect VMware using known mutexes"
+    description = "通过常见的互斥量(Mutex)检测VMware系统"
     severity = 3
     categories = ["antivm"]
     authors = ["KillerInstinct"]

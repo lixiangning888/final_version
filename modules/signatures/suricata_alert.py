@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SuricataAlert(Signature):
     name = "suricata_alert"
-    description = "Created network traffic indicative of malicious activity"
+    description = "生成可疑网络流量，可能被用来进行恶意活动"
     severity = 3
     confidence = 80
     weight = 3

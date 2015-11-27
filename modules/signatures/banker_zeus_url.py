@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Robby Zeitfuchs (@robbyFux)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ZeusURL(Signature):
     name = "banker_zeus_url"
-    description = "Contacts C&C server HTTP check-in (Banking Trojan)"
+    description = "联系C&C服务器HTTP接入(Banking 木马)"
     severity = 3
     categories = ["banker"]
     authors = ["Robby Zeitfuchs"]

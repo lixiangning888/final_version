@@ -13,25 +13,25 @@
                     </colgroup>
                     {% if analysis.static.pdf.Info.Creator %}
                         <tr>
-                            <th>Creator</th>
+                            <th>创建工具</th>
                             <td><span class="mono">{{analysis.static.pdf.Info.Creator}}</span></td>
                         </tr>
                     {% endif %}
                     {% if analysis.static.pdf.Info.Producer %}
                         <tr>
-                            <th>Producer</th>
+                            <th>制作者</th>
                             <td><span class="mono">{{analysis.static.pdf.Info.Producer}}</span></td>
                         </tr>
                     {% endif %}
                     {% if analysis.static.pdf.Info.Author %}
                         <tr>
-                            <th>Author</th>
+                            <th>作者</th>
                             <td><span class="mono">{{analysis.static.pdf.Info.Author}}</span></td>
                         </tr>
                     {% endif %}
                     <tr>
                         <th>熵(Entropy)总量</th>
-                        <td><span class="mono">{{analysis.static.Info|getkey:"Total Entropy"}}</span></td>
+                        <td><span class="mono">{{analysis.static.pdf.Info|getkey:"Total Entropy"}}</span></td>
                     </tr>
                     <tr>
                         <th>进入数据流的熵</th>
@@ -46,7 +46,7 @@
                         <td><span class="mono">{{analysis.static.pdf.Info|getkey:"Count %% EOF"}}</span></td>
                     </tr>
                     <tr>
-                        <th>PDF 头</th>
+                        <th>PDF头数据</th>
                         <td><span class="mono">{{analysis.static.pdf.Info|getkey:"PDF Header"}}</span></td>
                     </tr>
                     <tr>
@@ -116,7 +116,7 @@
         {% endif %}
         {% if analysis.static.pdf.Annot_URLs %}
         <div>
-            <h4>Link Annotation URLs</h4>
+            <h4>链接注释URLs</h4>
             <div class="well mono">
                 {% for url in analysis.static.pdf.Annot_URLs %}
                     {{url}}<br />
@@ -136,7 +136,7 @@
         {% endif %}
         {% if analysis.static.pdf.JSStreams %}
         <div>
-            <h4>Javascript Streams</h4>
+            <h4>Javascript 流</h4>
             <div id="objects">
                 {% for obj in analysis.static.pdf.JSStreams %}
                 <table class="table table-striped table-bordered">
@@ -162,7 +162,7 @@
                 </tr>
                 <tr>
                     <td>数据</td>
-                    <td><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#JSStream_{{obj|getkey:'Object ID'}}_Data">Data Extracted</a></td>
+                    <td><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#JSStream_{{obj|getkey:'Object ID'}}_Data">提取的数据</a></td>
                 </tr>
                 </table>
                 <div id="JSStream_{{obj|getkey:'Object ID'}}_Data" class="collapse">

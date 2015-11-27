@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DarkCometRegkeys(Signature):
     name = "darkcomet_regkeys"
-    description = "Interacts with known DarkComet registry keys"
+    description = "与已知DarkComet注册表键交互"
     severity = 3
     categories = ["rat"]
     families = ["darkcomet"]

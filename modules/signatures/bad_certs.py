@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BadCerts(Signature):
     name = "bad_certs"
-    description = "The executable used a known stolen/malicious Authenticode signature"
+    description = "可执行程序应用了常见的被盗的或恶意的认证Authenticode特征"
     severity = 3
     weight = 3
     categories = ["static"]

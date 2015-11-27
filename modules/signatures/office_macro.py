@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Office_Macro(Signature):
     name = "office_macro"
-    description = "The office file has a macro."
+    description = "Office文件中包含宏（macro）"
     severity = 2
     categories = ["office"]
     authors = ["KillerInstinct"]
@@ -32,7 +33,7 @@ class Office_Macro(Signature):
                     ret = True
                     total = len(self.results["static"]["office"]["Macro"]["Code"])
                     if total > 1:
-                        self.description = "The office file has %s macros." % str(total)
+                        self.description = " Office文件包含了 %s 个 macros." % str(total)
             # 97-2003 XML macros
             if not ret and "strings" in self.results:
                 header = False
@@ -41,7 +42,7 @@ class Office_Macro(Signature):
                         header = True
                     if header and 'macrosPresent="yes"' in line:
                         ret = True
-                        self.description = "The office file has an MSO/ActiveMime based macro."
+                        self.description = " Office文件包含了一个基于 MSO/ActiveMime 的macro "
                         self.severity = 3
                         break
 
@@ -63,7 +64,7 @@ class Office_Macro(Signature):
 
             if positives != []:
                 self.severity = 3
-                self.description += " The file also appears to have strings indicating common phishing lures."
+                self.description += " 文件还包含常见钓鱼(phishing)欺诈相关字符串 "
                 for positive in positives:
                     self.data.append({"Lure": positive})
 
@@ -75,7 +76,7 @@ class Office_Macro(Signature):
                     if words == "0" or words == "None":
                         self.severity = 3
                         self.weight += 2
-                        self.data.append({"content" : "The file appears to have no content."})
+                        self.data.append({"content" : "文件无内容."})
 
         if ret and "static" in self.results and "office" in self.results["static"]:
             if "Metadata" in self.results["static"]["office"]:
@@ -84,7 +85,7 @@ class Office_Macro(Signature):
                     if time == "0" or time == "None":
                         self.severity = 3
                         self.weight += 2
-                        self.data.append({"edit_time" : "The file appears to have no edit time."})
+                        self.data.append({"edit_time" : "文件无修改时间."})
                         
         if ret and "static" in self.results and "office" in self.results["static"]:
             if "Metadata" in self.results["static"]["office"]:
@@ -93,7 +94,7 @@ class Office_Macro(Signature):
                     if pages == "0" or pages == "None":
                         self.severity = 3
                         self.weight += 2
-                        self.data.append({"no_pages" : "The file appears to have no pages potentially caused by it being malformed or intentionally corrupted"})
+                        self.data.append({"no_pages" : "该文件似乎没有页面可能被它所恶意或故意损坏造成的."})
 
         if ret and "static" in self.results and "office" in self.results["static"]:
             if "Metadata" in self.results["static"]["office"]:
@@ -102,6 +103,6 @@ class Office_Macro(Signature):
                     if author == "1" or author == "Alex" or author == "Microsoft Office":
                         self.severity = 3
                         self.weight += 2
-                        self.data.append({"author" : "The file appears to have been created by a known fake author indicative of an automated document creation kit."})
+                        self.data.append({"author" : "该文件似乎是由一个已知的假作者创建的一个自动文档创建工具包."})
 
         return ret

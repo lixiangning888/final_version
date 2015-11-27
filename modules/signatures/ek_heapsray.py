@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 from lib.cuckoo.common.abstracts import Signature
 
 class HeapSpray_JS(Signature):
     name = "heapspray_js"
-    description = "Executes obfuscated JavaScript which contains common heap spray memory locations indicative of an exploit attempt"
+    description = "执行伪装过的包含常见堆喷射(heap spray)内存地址的JavaScript，可能被用于漏洞攻击尝试"
     weight = 3
     severity = 3
     categories = ["exploit"]

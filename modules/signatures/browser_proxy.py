@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross, Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ModifyProxy(Signature):
     name = "modify_proxy"
-    description = "Attempts to modify proxy settings"
+    description = "尝试修改代理设置"
     severity = 3
     categories = ["browser"]
     authors = ["Kevin Ross", "Optiv"]

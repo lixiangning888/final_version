@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Fingerprint(Signature):
     name = "recon_fingerprint"
-    description = "Collects information to fingerprint the system (MachineGuid, DigitalProductId, SystemBiosDate)"
+    description = "收集信息以计算系统信息指纹(MachineGuid, DigitalProductId, SystemBiosDate)"
     severity = 3
     categories = ["recon"]
     authors = ["nex", "Optiv"]

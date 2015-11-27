@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMDirectoryObjects(Signature):
     name = "antivm_directory_objects"
-    description = "The sample enumerated directory objects, possibly probing for Virtual Machine objects."
+    description = "该样本列举了目录对象，可能被用来探测虚拟机对象"
     severity = 2
     confidence = 80
     categories = ["antivm"]

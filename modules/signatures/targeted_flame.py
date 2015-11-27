@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Flame(Signature):
     name = "targeted_flame"
-    description = "Shows some indicators associated with the Flame malware"
+    description = "符合Flame恶意软件的一些特征"
     severity = 3
     references = ["http://www.crysys.hu/skywiper/skywiper.pdf",
                   "http://www.securelist.com/en/blog/208193522/The_Flame_Questions_and_Answers",

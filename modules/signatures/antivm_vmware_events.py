@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VMwareDetectEvent(Signature):
     name = "antivm_vmware_events"
-    description = "Detects VMware through Opening/Creating VMware specific events"
+    description = "通过是否打开或创建特别的VMware事件检测VMware系统"
     severity = 3
     categories = ["anti-vm"]
     authors = ["KillerInstinct"]

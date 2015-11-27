@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012, 2015 Thomas "stacks" Birn (@stacksth), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisableTaskMgr(Signature):
     name = "locker_taskmgr"
-    description = "Disables Windows' Task Manager"
+    description = "禁止Windows的任务管理器"
     severity = 3
     categories = ["locker"]
     authors = ["Thomas Birn", "nex"]

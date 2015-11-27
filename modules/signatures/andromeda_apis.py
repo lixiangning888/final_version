@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Andromeda_APIs(Signature):
     name = "andromeda_behavior"
-    description = "Exhibits behavior characteristic of Andromeda/Gamarue malware"
+    description = "符合Andromeda/Gamarue恶意软件相关行为特征"
     weight = 3
     severity = 3
     categories = ["trojan"]

@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2012-2014 Cuckoo Foundation.
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2012-2014 Cuckoo Foundation.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PDF_EOF(Signature):
     name = "pdf_eof"
-    description = "The PDF has data after the last %% EOF marker."
+    description = "PDF文件包含了晚于最后一个 %% EOF 标记的数据"
     severity = 3
     categories = ["pdf"]
     authors = ["KillerInstinct"]

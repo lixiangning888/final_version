@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BitcoinOpenCL(Signature):
     name = "bitcoin_opencl"
-    description = "Installs OpenCL library, probably to mine Bitcoins"
+    description = "安装OpenCL库，可能被用来挖取比特币"
     severity = 2
     categories = ["bitcoin"]
     authors = ["nex"]

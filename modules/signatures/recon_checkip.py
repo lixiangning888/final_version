@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CheckIP(Signature):
     name = "recon_checkip"
-    description = "Looks up the external IP address"
+    description = "查询外部IP地址"
     severity = 2
     categories = ["recon"]
     authors = ["nex", "Optiv"]

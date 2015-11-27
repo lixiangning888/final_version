@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkSMTP(Signature):
     name = "network_smtp"
-    description = "Makes SMTP requests, possibly sending spam"
+    description = "发起SMTP请求,可能被用来发送垃圾邮件"
     severity = 3
     categories = ["smtp", "spam"]
     authors = ["nex"]

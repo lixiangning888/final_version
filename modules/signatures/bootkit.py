@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -7,7 +8,7 @@ import struct
 
 class Bootkit(Signature):
     name = "bootkit"
-    description = "Likely installs a bootkit via raw harddisk modifications"
+    description = "可能通过原始硬盘更改安装了内核劫持(bookit)组件"
     severity = 3
     categories = ["rootkit"]
     authors = ["Optiv"]

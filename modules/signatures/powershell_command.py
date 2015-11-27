@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross, Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PowershellCommand(Signature):
     name = "powershell_command"
-    description = "Attempts to execute a powershell command with suspicious parameter/s"
+    description = "尝试执行一个包含可疑参数的powershell命令"
     severity = 2
     confidence = 70
     weight = 0

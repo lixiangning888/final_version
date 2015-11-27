@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ResourceLangID(Signature):
     name = "origin_resource_langid"
-    description = "Unconventionial language used in binary resources"
+    description = "二进制源中出现非常规语言"
     severity = 2
     authors = ["Optiv"]
     categories = ["origin"]

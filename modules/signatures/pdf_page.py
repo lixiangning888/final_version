@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2012-2014 Cuckoo Foundation.
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2012-2014 Cuckoo Foundation.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PDF_Page(Signature):
     name = "pdf_page"
-    description = "The PDF has one page. Many malicious PDFs only have one page."
+    description = "PDF文件的页数为1，很多可疑的PDF文件都只有一页"
     severity = 2
     categories = ["pdf"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class FynloskiMutexes(Signature):
     name = "rat_fynloski_mutexes"
-    description = "Creates known Fynloski/DarkComet mutexes"
+    description = "创建常见Fynloski/DarkComet互斥量（mutexes）"
     severity = 3
     categories = ["rat"]
     families = ["darkcomet", "fynloski"]

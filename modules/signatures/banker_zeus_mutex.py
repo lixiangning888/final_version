@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2014 Robby Zeitfuchs (@robbyFux)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2014 Robby Zeitfuchs (@robbyFux)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ZeusMutexes(Signature):
     name = "banker_zeus_mutex"
-    description = "Creates Zeus (Banking Trojan) mutexes"
+    description = "生成Zeus (Banking 木马)互斥量 mutexes"
     severity = 3
     categories = ["banker"]
     families = ["zeus"]

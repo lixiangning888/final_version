@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Authenticode(Signature):
     name = "static_authenticode"
-    description = "Presents an Authenticode digital signature"
+    description = "提供一个Authenticode数字签名"
     severity = 1
     weight = -1
     confidence = 30

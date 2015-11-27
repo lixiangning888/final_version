@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 KillerInstinct
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -11,8 +12,8 @@ from lib.cuckoo.common.abstracts import Signature
 
 class MimicsExtension(Signature):
     name = "mimics_extension"
-    description = ("Attempts to mimic the file extension of a {1} by having "
-                   "'{0}' in the file name.")
+    description = ("尝试模仿一个 {1} 的文件扩展名，通过使用 "
+                   "'{0}' 在文件名中")
     severity = 2
     categories = ["stealth"]
     authors = ["KillerInstinct"]

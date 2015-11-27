@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014-2015 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CopiesSelf(Signature):
     name = "copies_self"
-    description = "Creates a copy of itself"
+    description = "生成一个自己的复制文件"
     severity = 3
     categories = ["persistence"]
     authors = ["Optiv"]

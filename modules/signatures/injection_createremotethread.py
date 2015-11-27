@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2015 JoseMi "h0rm1" Holguin (@j0sm1), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InjectionCRT(Signature):
     name = "injection_createremotethread"
-    description = "Code injection with CreateRemoteThread in a remote process"
+    description = "在一个远程进程中注入代码（CreateRemoteThread）"
     severity = 3
     categories = ["injection"]
     authors = ["JoseMi Holguin", "nex", "Optiv"]
@@ -59,13 +60,13 @@ class InjectionCRT(Signature):
                 addr = int(self.get_argument(call, "BaseAddress"), 16)
                 buf = self.get_argument(call, "Buffer")
                 if addr >= 0x7c900000 and addr < 0x80000000 and buf.startswith("\\xe9"):
-                    self.description = "Code injection via WriteProcessMemory-modified NTDLL code in a remote process"
+                    self.description = "通过远程进程中的WriteProcessMemory-modified NTDLL code注入代码"
                     return True
         elif (call["api"] == "CreateRemoteThread" or call["api"].startswith("NtCreateThread")) and self.sequence == 2:
             if self.get_argument(call, "ProcessHandle") in self.process_handles:
                 return True
         elif call["api"].startswith("NtQueueApcThread") and self.sequence == 2:
             if self.get_argument(call, "ProcessId") in self.process_pids:
-                self.description = "Code injection with NtQueueApcThread in a remote process"
+                self.description = "通过远程进程中的NtQueueApcThread注入代码"
                 return True
 

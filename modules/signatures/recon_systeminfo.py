@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SystemInfo(Signature):
     name = "recon_systeminfo"
-    description = "Collects information on the system (ipconfig, netstat, systeminfo)"
+    description = "收集系统信息(ipconfig, netstat, systeminfo)"
     severity = 3
     categories = ["recon"]
     authors = ["nex"]

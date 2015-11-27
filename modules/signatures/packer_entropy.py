@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014,2015 Robby Zeitfuchs (@robbyFux), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PackerEntropy(Signature):
     name = "packer_entropy"
-    description = "The binary likely contains encrypted or compressed data."
+    description = "二进制文件可能包含加密或压缩数据"
     severity = 2
     categories = ["packer"]
     authors = ["Robby Zeitfuchs", "nex", "Optiv"]

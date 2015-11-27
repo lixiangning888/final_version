@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VMwareDetectKeys(Signature):
     name = "antivm_vmware_keys"
-    description = "Detects VMware through the presence of a registry key"
+    description = "通过注册表键检测VMware系统"
     severity = 3
     categories = ["anti-vm"]
     authors = ["Optiv"]

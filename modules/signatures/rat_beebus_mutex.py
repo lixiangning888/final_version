@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BeebusMutexes(Signature):
     name = "rat_beebus_mutexes"
-    description = "Creates known Beebus mutexes"
+    description = "创建常见Beebus互斥量（mutexes）"
     severity = 3
     categories = ["rat"]
     families = ["beebus"]

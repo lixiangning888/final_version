@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiSandboxSuspend(Signature):
     name = "antisandbox_suspend"
-    description = "Tries to suspend Cuckoo threads to prevent logging of malicious activity"
+    description = "尝试阻止Cuckoo线程以防止恶意行为被记录"
     severity = 3
     confidence = 80
     categories = ["anti-sandbox"]

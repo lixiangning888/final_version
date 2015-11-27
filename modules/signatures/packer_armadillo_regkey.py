@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ArmadilloRegKey(Signature):
     name = "packer_armadillo_regkey"
-    description = "Detected Armadillo packer using a known registry key"
+    description = "通过常见注册表键检测到Armadillo packer"
     severity = 3
     categories = ["packer"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 glysbays, Optiv, Inc. (brad.spengler@optiv.com)
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +17,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InjectionRUNPE(Signature):
     name = "injection_runpe"
-    description = "Executed a process and injected code into it, probably while unpacking"
+    description = "执行了一个进程并在其中注入代码（可能是在解包过程中）"
     severity = 3
     categories = ["injection"]
     authors = ["glysbaysb", "Optiv"]

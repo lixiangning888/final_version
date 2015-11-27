@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -7,7 +8,7 @@ import struct
 
 class Virus(Signature):
     name = "virus"
-    description = "Likely virus infection of existing system binary"
+    description = "已存在的系统二进制文件可能被病毒感染"
     severity = 3
     categories = ["virus"]
     authors = ["Optiv"]

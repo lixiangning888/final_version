@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Robby Zeitfuchs (@robbyFux)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Cridex(Signature):
     name = "banker_cridex"
-    description = "Cridex banking trojan"
+    description = "Cridex Banking 木马"
     severity = 3
     alert = True
     categories = ["Banking", "Trojan"]

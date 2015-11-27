@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SandboxJoeAnubisDetectFiles(Signature):
     name = "antisandbox_joe_anubis_files"
-    description = "Detects Joe or Anubis Sandboxes through the presence of a file"
+    description = "通过文件检测是否存在Joe或Anubis沙盒扫描系统"
     severity = 3
     categories = ["anti-sandbox"]
     authors = ["Kevin Ross"]

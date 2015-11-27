@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisablesSystemRestore(Signature):
     name = "disables_system_restore"
-    description = "Attempts to disable System Restore"
+    description = "尝试禁止系统恢复"
     severity = 3
     categories = ["ransomware"]
     authors = ["Kevin Ross"]

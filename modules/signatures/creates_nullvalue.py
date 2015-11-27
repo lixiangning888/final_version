@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CreatesNullValue(Signature):
     name = "creates_nullvalue"
-    description = "Creates a registry key or value with NUL characters to avoid detection with regedit"
+    description = "用空字符创建一个注册表键或注册表值以避免被注册表编辑器检测到"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

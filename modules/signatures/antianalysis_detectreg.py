@@ -1,4 +1,5 @@
-# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
+# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Accuvant, Inc. (bspengler@accuvant.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiAnalysisDetectReg(Signature):
     name = "antianalysis_detectreg"
-    description = "Attempts to identify installed analysis tools by registry key"
+    description = "尝试通过注册表键探测已安装的流量分析工具"
     severity = 3
     categories = ["anti-analysis"]
     authors = ["Optiv"]

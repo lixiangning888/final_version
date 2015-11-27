@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Thomas "stacks" Birn (@stacksth)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CreatesAutorunInf(Signature):
     name = "spreading_autoruninf"
-    description = "Creates an autorun.inf file"
+    description = "创建一个autorun.inf文件"
     severity = 2
     categories = ["spreading"]
     authors = ["Thomas Birn", "nex"]

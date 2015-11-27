@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Static_Java(Signature):
     name = "static_java"
-    description = "JAR file contains suspicious characteristics"
+    description = "JAR文件包含可疑特征"
     severity = 2
     weight = 0
     categories = ["java", "static"]
@@ -105,7 +106,7 @@ class Static_Java(Signature):
                 exploit += 1
 
             if exploit > 0:
-                self.description += " and contains possible exploit code."
+                self.description += " 以及包含可疑的扩展代码"
                 self.severity = 3
                 self.weight += 1
 

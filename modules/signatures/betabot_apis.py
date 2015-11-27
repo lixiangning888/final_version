@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BetaBot_APIs(Signature):
     name = "betabot_behavior"
-    description = "Exhibits behavior characteristics of BetaBot / Neurevt malware"
+    description = "展现BetaBot/Neurevt恶意软件的行为特征"
     severity = 3
     weight = 3
     categories = ["trojan"]

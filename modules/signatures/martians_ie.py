@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Will Metcalf (william.metcalf@gmail.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class MartiansIE(Signature):
     name = "ie_martian_children"
-    description = "Martian Subprocess Started By IE"
+    description = "IE浏览器开始Martian子进程"
     severity = 3
     categories = ["martians"]
     authors = ["Will Metcalf"]

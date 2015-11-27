@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StackPivot(Signature):
     name = "stack_pivot"
-    description = "Stack pivoting was detected when using a critical API"
+    description = "调用关键API时检测到堆栈转移(Stack pivoting)"
     severity = 3
     categories = ["exploit"]
     authors = ["Optiv"]

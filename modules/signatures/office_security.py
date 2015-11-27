@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -12,12 +13,11 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 from lib.cuckoo.common.abstracts import Signature
 
 class OfficeSecurity(Signature):
     name = "office_security"
-    description = "Attempts to modify Microsoft Office security settings"
+    description = "尝试修改Microsoft Office安全设置"
     severity = 3
     categories = ["office"]
     authors = ["Kevin Ross"]

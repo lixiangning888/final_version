@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiSandboxSleep(Signature):
     name = "antisandbox_sleep"
-    description = "A process attempted to delay the analysis task."
+    description = "通过进程尝试延迟分析任务"
     severity = 2
     categories = ["anti-sandbox"]
     authors = ["KillerInstinct"]
@@ -61,6 +62,6 @@ class AntiSandboxSleep(Signature):
                                  % (process, attempted, actual)})
             if procs[process]["Attempted"] >= 2100000:
                 self.severity = 3
-                self.description = "A process attempted to delay the analysis task by a long amount of time."
+                self.description = "通过进程尝试长时间延迟分析任务"
 
         return ret

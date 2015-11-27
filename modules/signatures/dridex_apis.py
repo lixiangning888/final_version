@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.signature_utils import DridexDecode_v1
 
 class Dridex_APIs(Signature):
     name = "dridex_behavior"
-    description = "Exhibits behavior characteristic of Dridex malware"
+    description = "展现Dridex恶意软件的行为特征"
     weight = 3
     severity = 3
     categories = ["banker", "trojan"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class XtremeMutexes(Signature):
     name = "rat_xtreme_mutexes"
-    description = "Creates known XtremeRAT mutexes"
+    description = "创建常见XtremeRAT互斥量（mutexes）"
     severity = 3
     categories = ["rat"]
     families = ["xtremerat"]

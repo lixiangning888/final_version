@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkBIND(Signature):
     name = "network_bind"
-    description = "Starts servers listening on {0}"
+    description = "开始系统监听{0}"
     severity = 2
     categories = ["bind"]
     authors = ["nex", "Optiv"]

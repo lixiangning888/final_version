@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DEPBypass(Signature):
     name = "dep_bypass"
-    description = "DEP was bypassed by marking part of the heap executable"
+    description = "通过标记堆(heap)的一部分可执行绕开DEP"
     severity = 3
     categories = ["exploit"]
     authors = ["Optiv"]

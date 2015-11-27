@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntisandboxSboxieMutex(Signature):
     name = "antisandbox_sboxie_mutex"
-    description = "Detects Sandboxie using a known mutex"
+    description = "通过已知互斥量(mutex)检测是否存在Sandboxie"
     severity = 3
     categories = ["antisandbox"]
     authors = ["KillerInstinct"]

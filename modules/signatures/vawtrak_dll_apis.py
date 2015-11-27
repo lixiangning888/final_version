@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Vawtrak_APIs(Signature):
     name = "vawtrak_behavior"
-    description = "Exhibits behavior characteristics of Vawtrak / Neverquest malware."
+    description = "展现Vawtrak / Neverquest恶意软件的行为特征"
     severity = 3
     weight = 3
     categories = ["banking", "trojan"]

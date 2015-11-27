@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class GetProductID(Signature):
     name = "antisandbox_productid"
-    description = "Retrieves Windows ProductID, probably to fingerprint the sandbox"
+    description = "提取Windows产品ID, 可能被用来寻找沙盒指纹信息"
     severity = 3
     categories = ["anti-sandbox"]
     authors = ["nex", "Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free Software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PersistenceService(Signature):
     name = "persistence_service"
-    description = "Created a service that was not started"
+    description = "创建了一个服务，但是没有启动"
     severity = 3
     categories = ["persistence"]
     authors = ["Optiv"]

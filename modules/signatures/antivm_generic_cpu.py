@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMCPU(Signature):
     name = "antivm_generic_cpu"
-    description = "Checks the CPU name from registry, possibly for anti-virtualization"
+    description = "检查注册表中的CPU名信息，可能被用来实现反虚拟机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["Optiv"]

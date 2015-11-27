@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross, Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BrowserSecurity(Signature):
     name = "browser_security"
-    description = "Attempts to modify browser security settings"
+    description = "尝试更改浏览器安全设置"
     severity = 3
     categories = ["browser", "clickfraud", "banker"]
     authors = ["Kevin Ross", "Optiv"]

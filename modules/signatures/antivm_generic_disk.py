@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2014 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DiskInformation(Signature):
     name = "antivm_generic_disk"
-    description = "Queries information on disks, possibly for anti-virtualization"
+    description = "查询磁盘信息，可能被用来实现反虚拟机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["nex", "Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross, Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ModifySecurityCenterWarnings(Signature):
     name = "modify_security_center_warnings"
-    description = "Attempts to modify or disable Security Center warnings"
+    description = "尝试更改或禁止安全中心报警"
     severity = 3
     categories = ["stealth"]
     authors = ["Kevin Ross", "Optiv"]

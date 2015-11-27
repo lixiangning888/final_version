@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ClickfraudCookies(Signature):
     name = "clickfraud_cookies"
-    description = "Overrides system cookie policy, indicative of click fraud"
+    description = "覆写系统缓存策略，常见于点击欺诈(click fraud)"
     severity = 3
     categories = ["clickfraud"]
     authors = ["Optiv"]

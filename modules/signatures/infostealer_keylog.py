@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -5,7 +6,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class KeyLogger(Signature):
     name = "infostealer_keylog"
-    description = "Sniffs keystrokes"
+    description = "嗅探键盘记录（keystrokes)"
     severity = 3
     categories = ["infostealer"]
     authors = ["Optiv"]

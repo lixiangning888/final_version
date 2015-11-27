@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class TorGateway(Signature):
     name = "network_torgateway"
-    description = "Connects to Tor Hidden Services through a Tor gateway"
+    description = "通过洋葱(Tor)路由网关连接Tor隐藏服务"
     severity = 3
     categories = ["network"]
     authors = ["nex", "Optiv"]

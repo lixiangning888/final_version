@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012-2014 Claudio "nex" Guarnieri (@botherder), Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class FTPStealer(Signature):
     name = "infostealer_ftp"
-    description = "Harvests credentials from local FTP client softwares"
+    description = "从本地FTP客户端软件中盗取账号密码数据"
     severity = 3
     categories = ["infostealer"]
     authors = ["nex", "Optiv"]

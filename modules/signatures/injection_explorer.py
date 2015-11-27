@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InjectionExplorer(Signature):
     name = "injection_explorer"
-    description = "Injected into Explorer using shared memory and window message technique"
+    description = "通过共享内存和窗口消息技术注入Explorer"
     severity = 3
     categories = ["injection"]
     authors = ["Optiv"]

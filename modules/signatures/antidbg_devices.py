@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiDBGDevices(Signature):
     name = "antidbg_devices"
-    description = "Checks for the presence of known devices from debuggers and forensic tools"
+    description = "检查是否存在常见排错或检验程序的驱动"
     severity = 3
     categories = ["anti-debug"]
     authors = ["nex"]

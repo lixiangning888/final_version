@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 try:
     import re2 as re
 except ImportError:
@@ -7,7 +8,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Java_JS(Signature):
     name = "java_js"
-    description = "Executes obfuscated JavaScript containing a Java appplet indicative of an exploit attempt"
+    description = "执行伪装过的包含Java小型应用程序的JavaScript，可能被用于漏洞攻击尝试"
     weight = 3
     severity = 3
     categories = ["exploit_kit", "java"]

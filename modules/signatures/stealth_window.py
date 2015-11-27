@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 KillerInstinct
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Hidden_Window(Signature):
     name = "stealth_window"
-    description = "A process created a hidden window"
+    description = "一个进程创建了一个隐藏窗口"
     severity = 2
     categories = ["stealth"]
     authors = ["KillerInstinct"]

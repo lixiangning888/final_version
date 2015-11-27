@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Tor(Signature):
     name = "network_tor"
-    description = "Installs Tor on the infected machine"
+    description = "在感染的机器上安装洋葱路由(Tor)"
     severity = 3
     categories = ["network", "anonimity", "tor"]
     authors = ["nex"]

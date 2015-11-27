@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 JoseMi Holguin (@j0sm1)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Ruskill(Signature):
     name = "bot_russkill"
-    description = "Creates known Ruskill mutexes"
+    description = "生成常见的Ruskill互斥量（mutexes）"
     severity = 3
     alert = True
     categories = ["bot", "ddos"]

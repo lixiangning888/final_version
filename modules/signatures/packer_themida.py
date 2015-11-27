@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ThemidaPacked(Signature):
     name = "packer_themida"
-    description = "An executed process used known Themida API calls."
+    description = "一个执行的进程使用了常见的Themida API调用"
     severity = 3
     categories = ["packer", "anti-debug"]
     authors = ["KillerInstinct"]
@@ -70,6 +71,6 @@ class ThemidaPacked(Signature):
             if len(themidaprocs) > 0:
                 hit = True
                 procs = ", ".join(themidaprocs)
-                self.description = "The following process appear to have been packed with Themida: " + procs
+                self.description = "下列进程可能被使用Themida打包: " + procs
 
         return hit

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DisablesUAC(Signature):
     name = "disables_uac"
-    description = "Attempts to disable UAC"
+    description = "尝试禁止UAC"
     severity = 3
     categories = ["generic"]
     authors = ["Optiv"]

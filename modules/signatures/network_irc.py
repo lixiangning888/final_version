@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkIRC(Signature):
     name = "network_irc"
-    description = "Connects to an IRC server, possibly part of a botnet"
+    description = "连接到一台IRC服务器, 可能是僵尸网络的一部分"
     severity = 3
     categories = ["irc"]
     authors = ["nex"]

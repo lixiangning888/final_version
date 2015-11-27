@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Crash(Signature):
     name = "exec_crash"
-    description = "At least one process apparently crashed during execution"
+    description = "至少有一个进程在执行过程中崩溃"
     severity = 1
     categories = ["execution", "crash"]
     authors = ["nex"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-  
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DeadLink(Signature):
     name = "dead_link"
-    description = "Attempts to execute a binary from a dead or sinkholed URL"
+    description = "尝试通过一个失效的或sinkhole的URL链接执行一个二进制文件"
     severity = 3
     weight = 2
     categories = ["generic"]

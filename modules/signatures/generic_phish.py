@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Generic_Phish(Signature):
     name = "generic_phish"
-    description = "Network activity contains generic phishing indicators indicative of a website clone."
+    description = "网络活动包含通用钓鱼特征，可能被用于网站克隆"
     severity = 2
     weight = 2
     categories = ["network"]

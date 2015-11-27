@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CarberpMutexes(Signature):
     name = "carberp_mutex"
-    description = "Attempts to create a known Carberp/Rovnix mutex."
+    description = "生成常见的Carberp/Rovnix互斥量（mutex）"
     weight = 3
     severity = 3
     categories = ["banker", "trojan", "rootkit"]

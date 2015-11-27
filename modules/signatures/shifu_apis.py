@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Shifu_APIs(Signature):
     name = "shifu_behavior"
-    description = "Exhibits behavior characteristics of Shifu malware."
+    description = "展现Shifu恶意软件的行为特征"
     severity = 3
     weight = 3
     categories = ["banking", "trojan"]

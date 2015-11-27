@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -11,7 +12,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiAVServiceStop(Signature):
     name = "antiav_servicestop"
-    description = "Attempts to stop active services"
+    description = "尝试终止活跃的服务"
     severity = 3
     categories = ["anti-av"]
     authors = ["Optiv"]

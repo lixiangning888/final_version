@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class TorHiddenService(Signature):
     name = "network_tor_service"
-    description = "Creates a Tor Hidden Service on the machine"
+    description = "在机器上创建一个洋葱路由(Tor)隐藏服务"
     severity = 3
     categories = ["network", "anonimity", "tor"]
     authors = ["nex"]

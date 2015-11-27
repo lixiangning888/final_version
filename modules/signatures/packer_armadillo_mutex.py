@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ArmadilloMutex(Signature):
     name = "packer_armadillo_mutex"
-    description = "Detected Armadillo packer using a known mutex"
+    description = "通过常见互斥量（mutex）检测到Armadillo packer"
     severity = 3
     categories = ["packer"]
     authors = ["KillerInstinct"]

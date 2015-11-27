@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class RemovesZoneIdADS(Signature):
     name = "removes_zoneid_ads"
-    description = "Attempts to remove evidence of file being downloaded from the Internet"
+    description = "尝试删除从因特网下载文件的证据"
     severity = 3
     categories = ["generic"]
     authors = ["Optiv"]

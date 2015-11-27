@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VPCDetectMutex(Signature):
     name = "antivm_vpc_mutex"
-    description = "Detects Virtual PC using a known mutex"
+    description = "通过已知互斥量(mutex)检测是否存在虚拟计算机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["KillerInstinct"]

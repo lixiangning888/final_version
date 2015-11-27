@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkDGA(Signature):
     name = "network_dga"
-    description = "Likely use of Domain Generation Algorithm (DGA)"
+    description = "可能使用了域名生成算法(DGA)"
     severity = 3
     categories = ["network"]
     authors = ["Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Jeremy Hedges
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VMPPacked(Signature):
     name = "packer_vmprotect"
-    description = "The executable is likely packed with VMProtect"
+    description = "可执行文件可能使用VMProtect打包"
     severity = 2
     categories = ["packer"]
     authors = ["Jeremy Hedges"]

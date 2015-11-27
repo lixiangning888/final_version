@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StealthHiddenReg(Signature):
     name = "stealth_hiddenreg"
-    description = "Attempts to modify Explorer settings to prevent hidden files from being displayed"
+    description = "尝试修改Windows桌面进程以防止隐藏文件被显示"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

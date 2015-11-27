@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DebugsSelf(Signature):
     name = "debugs_self"
-    description = "Debugs itself to thwart analysis"
+    description = "对自身进行排错以阻挠分析"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

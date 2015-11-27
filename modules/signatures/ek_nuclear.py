@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Will Metcalf william.metcalf@gmail.com 
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Nuclear_JS(Signature):
     name = "nuclear_js"
-    description = "Executes obfuscated JavaScript indicative of Nuclear Exploit Kit"
+    description = "执行伪装过的JavaScript，可能被用于Nuclear漏洞攻击组件"
     weight = 3
     severity = 3
     categories = ["exploit_kit"]

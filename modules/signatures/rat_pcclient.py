@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 @threatlead
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class PcClientMutexes(Signature):
     name = "rat_pcclient"
-    description = "Creates known PcClient mutex and/or file changes."
+    description = "创建常见PcClient互斥量（mutex）或相应的文件变动"
     severity = 3
     categories = ["rat"]
     families = ["pcclient", "nex"]

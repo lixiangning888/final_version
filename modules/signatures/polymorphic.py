@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013-2014 Lord Alfred Remorin, Optiv Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -25,7 +26,7 @@ except ImportError:
 
 class Polymorphic(Signature):
     name = "polymorphic"
-    description = "Creates a slightly modified copy of itself"
+    description = "创建了一个轻微改动过的自身拷贝"
     severity = 3
     categories = ["persistence"]
     authors = ["lordr", "Optiv"]

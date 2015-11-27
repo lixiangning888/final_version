@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMDiskReg(Signature):
     name = "antivm_generic_diskreg"
-    description = "Checks the presence of disk drives in the registry, possibly for anti-virtualization"
+    description = "检查注册表中的磁盘驱动器，可能被用来实现反虚拟机"
     severity = 3
     confidence = 50
     categories = ["anti-vm"]

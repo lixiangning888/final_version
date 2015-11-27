@@ -4,15 +4,15 @@
         {% if analysis.info.category == "file" %}
         <li class="active"><a href="#static_analysis_tab" data-toggle="tab">静态文件分析</a></li>
         {% if analysis.static and "PE32" in analysis.target.file.type and "Mono" in analysis.target.file.type %}
-        <li><a href="#static_dotnet_tab" data-toggle="tab">.NET Static Analysis</a></li>
+        <li><a href="#static_dotnet_tab" data-toggle="tab">.NET静态分析</a></li>
         {% endif %}
         {% if analysis.static and analysis.static.rat %}
         <li><a href="#static_ratconfig_tab" data-toggle="tab">RAT 配置</a></li>
         {% endif %}
-        <li><a href="#static_strings_tab" data-toggle="tab">Strings</a></li>
+        <li><a href="#static_strings_tab" data-toggle="tab">字符串</a></li>
         {% endif %}
         {% if analysis.info.category == "url" %}
-        <li class="active"><a href="#static_url_tab" data-toggle="tab">URL Analysis</a></li>
+        <li class="active"><a href="#static_url_tab" data-toggle="tab">URL分析</a></li>
         {% endif %}
         {% if config.virustotal %}
         <li><a href="#static_antivirus_tab" data-toggle="tab">杀毒软件</a></li>

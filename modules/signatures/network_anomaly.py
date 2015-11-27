@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class NetworkAnomaly(Signature):
     name = "network_anomaly"
-    description = "Network anomalies occured during the analysis."
+    description = "文件分析中出现网络异常"
     severity = 2
     categories = ["network"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Thomas "stacks" Birn (@stacksth)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InstallsWinpcap(Signature):
     name = "sniffer_winpcap"
-    description = "Installs WinPCAP"
+    description = "安装WinPCAP"
     severity = 3
     categories = ["sniffer"]
     authors = ["Thomas Birn", "nex"]

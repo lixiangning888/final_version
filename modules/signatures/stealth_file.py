@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
@@ -12,7 +13,7 @@ import struct
 
 class StealthFile(Signature):
     name = "stealth_file"
-    description = "Creates a hidden or system file"
+    description = "创建一个隐藏文件或系统文件"
     severity = 3
     confidence = 50
     categories = ["stealth"]

@@ -1,4 +1,5 @@
-﻿# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
+﻿# -*- coding: utf-8 -*-
+# Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
@@ -7,7 +8,7 @@ from datetime import datetime
 
 class PEAnomaly(Signature):
     name = "static_pe_anomaly"
-    description = "Anomalous binary characteristics"
+    description = "异常的二进制特征"
     severity = 3
     confidence = 80
     weight = 0

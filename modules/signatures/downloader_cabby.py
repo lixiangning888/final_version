@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Robby Zeitfuchs (@robbyFux)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class DownloaderCabby(Signature):
     name = "downloader_cabby"
-    description = "Suspicious downloader (Cabby)"
+    description = "可疑下载器(Cabby)"
     severity = 3
     categories = ["downloader"]
     families = ["downloader"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 thedude13
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Madness(Signature):
     name = "bot_madness"
-    description = "Recognized to be an Madness bot"
+    description = "被识别为Madness自动脚本病毒（Madness bot）"
     severity = 3
     categories = ["bot", "ddos"]
     families = ["madness"]

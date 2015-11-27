@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiSandboxSboxieObjects(Signature):
     name = "antisandbox_sboxie_objects"
-    description = "The sample enumerated a known Sandboxie device object."
+    description = "该样本列举了一个已知的Sandboxie设备对象"
     severity = 3
     categories = ["antisandbox"]
     authors = ["KillerInstinct"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class StealthNetwork(Signature):
     name = "stealth_network"
-    description = "Network activity detected but not expressed in API logs"
+    description = "检测到网络活动但没有显示在API日志中"
     severity = 3
     categories = ["stealth"]
     authors = ["Optiv"]

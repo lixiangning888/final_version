@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ModifiesUACNotify(Signature):
     name = "modify_uac_prompt"
-    description = "Attempts to modify UAC prompt behavior"
+    description = "尝试更改UAC提示行为"
     severity = 3
     categories = ["stealth"]
     authors = ["Kevin Ross"]

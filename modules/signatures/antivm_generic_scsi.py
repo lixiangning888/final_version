@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMSCSI(Signature):
     name = "antivm_generic_scsi"
-    description = "Detects virtualization software with SCSI Disk Identifier trick"
+    description = "通过SCSI磁盘标识符检测虚拟机软件"
     severity = 3
     categories = ["anti-vm"]
     authors = ["nex"]

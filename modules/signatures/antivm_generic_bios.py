@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2013,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiVMBios(Signature):
     name = "antivm_generic_bios"
-    description = "Checks the version of Bios, possibly for anti-virtualization"
+    description = "检查Bios版本，可能被用来实现反虚拟机"
     severity = 3
     categories = ["anti-vm"]
     authors = ["nex", "Optiv"]

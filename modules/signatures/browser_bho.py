@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class BrowserHelperObject(Signature):
     name = "browser_helper_object"
-    description = "Attempts to create or modify a Browser Helper Object"
+    description = "尝试创建或修改一个Browser Helper Object（BHO）组件"
     severity = 3
     categories = ["browser"]
     authors = ["Kevin Ross"]

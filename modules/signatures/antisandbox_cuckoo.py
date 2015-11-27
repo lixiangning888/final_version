@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class AntiCuckoo(Signature):
     name = "antisandbox_cuckoo"
-    description = "Employs AntiCuckoo detection techniques"
+    description = "使用反Cuckoo系统检测技术"
     severity = 3
     weight = 3
     categories = ["anti-sandbox"]

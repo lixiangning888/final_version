@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class browser_startpage(Signature):
     name = "browser_startpage"
-    description = "Attempts to modify Internet Explorer's start page"
+    description = "尝试更改IE浏览器的初始页"
     severity = 2
     categories = ["browser", "adware"]
     authors = ["Kevin Ross"]

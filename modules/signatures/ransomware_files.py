@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 KillerInstinct, Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class RansomwareFiles(Signature):
     name = "ransomware_files"
-    description = "Creates a known ransomware decryption instruction / key file."
+    description = "创建常见的勒索软件（ransomware）解密说明或密钥文件"
     weight = 3
     severity = 3
     categories = ["ransomware"]

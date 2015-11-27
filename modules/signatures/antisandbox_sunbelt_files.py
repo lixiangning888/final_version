@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Kevin Ross
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class SunbeltDetectFiles(Signature):
     name = "antisandbox_sunbelt_files"
-    description = "Detects Sunbelt Sandbox through the presence of a file"
+    description = "通过文件检测是否存在Sunbelt沙盒系统"
     severity = 3
     categories = ["anti-sandbox"]
     authors = ["Kevin Ross"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2010-2015 Cuckoo Foundation.
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class CreatesExe(Signature):
     name = "creates_exe"
-    description = "Creates a Windows executable on the filesystem"
+    description = "在文件系统上创建一个Windows可执行文件 "
     severity = 2
     categories = ["generic"]
     authors = ["Cuckoo Developers"]

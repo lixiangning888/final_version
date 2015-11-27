@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012,2015 Claudio "nex" Guarnieri (@botherder), Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -22,7 +23,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class ADS(Signature):
     name = "persistence_ads"
-    description = "Attempts to interact with an Alternate Data Stream (ADS)"
+    description = "尝试与一个交换数据流Alternate Data Stream (ADS)交互"
     severity = 3
     categories = ["persistence", "ads"]
     authors = ["nex", "Optiv"]

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2014 Optiv, Inc. (brad.spengler@optiv.com)
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
@@ -6,7 +7,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class InjectionRWX(Signature):
     name = "injection_rwx"
-    description = "Creates RWX memory"
+    description = "创建RWX内存"
     severity = 2
     confidence = 50
     categories = ["injection"]

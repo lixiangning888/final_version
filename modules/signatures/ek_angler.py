@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2015 Optiv, Inc. (brad.spengler@optiv.com)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class Angler_JS(Signature):
     name = "angler_js"
-    description = "Executes obfuscated JavaScript indicative of Angler Exploit Kit"
+    description = "执行混淆过的JavaScript（Angler Exploit Kit）"
     weight = 3
     severity = 3
     categories = ["exploit_kit"]

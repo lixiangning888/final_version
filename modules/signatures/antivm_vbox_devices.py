@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (C) 2012 Claudio "nex" Guarnieri (@botherder)
 #
 # This program is free software: you can redistribute it and/or modify
@@ -17,7 +18,7 @@ from lib.cuckoo.common.abstracts import Signature
 
 class VBoxDetectDevices(Signature):
     name = "antivm_vbox_devices"
-    description = "Detects VirtualBox through the presence of a device"
+    description = "通过设备检测VirtualBox系统"
     severity = 3
     categories = ["anti-vm"]
     authors = ["nex"]
