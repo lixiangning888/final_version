@@ -1,0 +1,91 @@
+{% load generic_tags %}
+<div class="tabbable tabs">
+    <ul class="nav nav-pills" style="margin-bottom: 0;">
+        {% if analysis.info.category == "file" %}
+        <li class="active"><a href="#static_analysis_tab" data-toggle="tab">静态文件分析</a></li>
+        {% if analysis.static and "PE32" in analysis.target.file.type and "Mono" in analysis.target.file.type %}
+        <li><a href="#static_dotnet_tab" data-toggle="tab">.NET Static Analysis</a></li>
+        {% endif %}
+        {% if analysis.static and analysis.static.rat %}
+        <li><a href="#static_ratconfig_tab" data-toggle="tab">RAT 配置</a></li>
+        {% endif %}
+        <li><a href="#static_strings_tab" data-toggle="tab">Strings</a></li>
+        {% endif %}
+        {% if analysis.info.category == "url" %}
+        <li class="active"><a href="#static_url_tab" data-toggle="tab">URL Analysis</a></li>
+        {% endif %}
+        {% if config.virustotal %}
+        <li><a href="#static_antivirus_tab" data-toggle="tab">杀毒软件</a></li>
+        {% endif %}
+    </ul>
+    <div class="tab-content">
+        {% if analysis.info.category == "file" %}
+        <div class="tab-pane fade in active" id="static_analysis_tab">
+            {% if "PE32" in analysis.target.file.type or "MS-DOS executable" in analysis.target.file.type %}
+                {% include "analysis/static/_pe32.html" %}
+            {% elif "PDF" in analysis.target.file.type or analysis.target.file.name|endswith:".pdf" %}
+                {% include "analysis/static/_pdf.html" %}
+            {% elif "Composite Document File V2 Document" in analysis.target.file.type %}
+                {% include "analysis/static/_office.html" %}
+            {% elif "Excel 2007+" in analysis.target.file.type %}
+                {% include "analysis/static/_office.html" %}
+            {% elif "PowerPoint 2007+" in analysis.target.file.type %}
+                {% include "analysis/static/_office.html" %}
+            {% elif "Word 2007+" in analysis.target.file.type %}
+                {% include "analysis/static/_office.html" %}
+            {% elif "MIME entity" in analysis.target.file.type %}
+                {% include "analysis/static/_office.html" %}
+            {% elif "Java Jar" in analysis.target.file.type or analysis.target.file.name|endswith:".jar" %}
+                {% include "analysis/static/_java.html" %}
+            {% elif "Zip archive data" in analysis.target.file.type %}
+                {% if analysis.target.file.name|endswith:".docx" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".docm" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".doc" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".mht" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".xls" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".xlsx" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".ppt" %}
+                    {% include "analysis/static/_office.html" %}
+                {% elif analysis.target.file.name|endswith:".pptx" %}
+                    {% include "analysis/static/_office.html" %}
+                {% else %}
+                    没有可用的静态分析.
+                {% endif %}
+            {% else %}
+                没有可用的静态分析.
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if analysis.info.category == "file" and analysis.static and "PE32" in analysis.target.file.type and "Mono" in analysis.target.file.type %}
+        <div class="tab-pane fade" id="static_dotnet_tab">
+            {% include "analysis/static/_dotnet.html" %}
+        </div>
+        {% endif %}
+        {% if analysis.info.category == "file" and analysis.static and analysis.static.rat %}
+        <div class="tab-pane fade" id="static_ratconfig_tab">
+            {% include "analysis/static/_ratconfig.html" %}
+        </div>
+        {% endif %}
+        {% if analysis.info.category == "file" %}
+        <div class="tab-pane fade" id="static_strings_tab">
+            {% include "analysis/static/_strings.html" %}
+        </div>
+        {% endif %}
+        {% if analysis.info.category == "url" %}
+        <div class="tab-pane fade in active" id="static_url_tab">
+            {% include "analysis/static/_url.html" %}
+        </div>
+        {% endif %}
+        {% if config.virustotal %}
+        <div class="tab-pane fade" id="static_antivirus_tab">
+            {% include "analysis/static/_antivirus.html" %}
+        </div>
+        {% endif %}
+    </div>
+</div>

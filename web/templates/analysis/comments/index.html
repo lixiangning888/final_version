@@ -1,0 +1,31 @@
+{% if not user.is_anonymous %}
+<h4>评论</h4><br />
+<form class="form-horizontal" role="form" method="post" action="/analysis/{{analysis.info.id}}/comments/">{% csrf_token %}
+<div class="row">
+  <div class="form group col-lg-10">
+      <textarea class="form-control" rows="7" name="commentbox" placeholder="添加评论 ..."></textarea>
+      <div style="margin-top: 5px;">
+        <button class="btn btn-primary pull-right" type="submit">提交</button>
+      </div>
+  </div>
+</div>
+</form>
+<hr>
+{% endif %}
+{% if analysis.info.comments %}
+{% for comment in analysis.info.comments %}
+<div class="alert alert-info">
+	<b>
+	{% if comment.UserName %}
+		{{comment.UserName}}
+	{% else %}
+		 匿名用户
+	{% endif %}
+	发表于
+	[{{comment.Timestamp}}]</b>
+
+	<br />{{comment.Data|safe}}</div>
+{% endfor %}
+{% else %}
+<div class="alert alert-info center">暂时还没有评论。</div>
+{% endif %}

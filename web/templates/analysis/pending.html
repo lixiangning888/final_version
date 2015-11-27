@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<p style="margin-bottom: 10px;"><img src="{{ STATIC_URL }}graphic/cuckoo.png" /></p>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">我的扫描</h3>
+    </div>
+    {% if tasks %}
+    <table class="table table-striped" style="table-layout: fixed;">
+        <thead>
+        <tr>
+            <th>提交时间</th>
+            <th>扫描类型</th>
+            <th>扫描目标</th>
+            <th>扫描状态</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in tasks %}
+            <tr>
+                <td>
+                {% if task.status == "reported" %}
+                    {{task.completed_on}}
+                {% else %}
+                    <span class="muted">{{task.added_on}} (added on)</span>
+                {% endif %}
+                </td>
+                <td>
+		{% if task.category == "file" %}
+		文件
+		{% elif task.category == "url" %}
+		URL
+		{% else %}
+                        <span class="text-danger">{{task.status}}</span>
+		{% endif %}
+		</td>
+                <td>
+	        {% if task.status == "reported" %}
+		   <a href="{% url "analysis.views.report" task.base64 %}">
+		      {{task.target}}
+                   </a>
+                {% else %}
+                   <a href="{% url "submission.views.status" task.base64 %}">
+                      {{task.target}}
+		   </a>
+		{% endif %}
+		</td>
+                <td>
+                    {% if task.status == "pending" %}
+                        <span class="text-muted">队列中</span>
+                    {% elif task.status == "running" %}
+                        <span class="text-warning">扫描中</span>
+                    {% elif task.status == "completed" %}
+                        <span class="text-info">生成报告中</span>
+                    {% elif task.status == "reported" %}
+                        <span class="text-success">已生成扫描报告</span>
+                    {% else %}
+                        <span class="text-danger">{{task.status}}</span>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div class="panel-body">还没有任何扫描.</div>
+    {% endif %}
+        </div>
+{% endblock %}

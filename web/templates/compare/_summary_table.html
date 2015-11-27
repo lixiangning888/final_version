@@ -1,0 +1,24 @@
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <!--<th>ID</th>-->
+            <th>文件名</th>
+            <th>扫描机器</th>
+            <th>扫描结束时间</th>
+            <th>扫描持续时间</th>
+            <th>选择</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+            <tr>
+                <!--<td>{{record.info.id}}</td>-->
+                <td>{{record.target.file.name}}</td>
+                <td>{{record.info.machine.name}}</td>
+                <td>{{record.info.ended}}</td>
+                <td>{{record.info.duration}} seconds</td>
+                <td><a class="btn btn-primary btn-small" href="{% url "compare.views.both" left.info.base64id record.info.base64id %}">选择</a></td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

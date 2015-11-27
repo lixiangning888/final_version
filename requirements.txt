@@ -1,0 +1,12 @@
+sqlalchemy
+jinja2
+pymongo
+bottle
+pefile
+django
+django-ratelimit
+chardet
+nose
+jsbeautifier
+pygal
+dnspython

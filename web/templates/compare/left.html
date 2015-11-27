@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<p style="margin-bottom: 10px;"><img src="{{ STATIC_URL }}graphic/cuckoo.png" /></p>
+
+<script type='text/javascript'>
+$(function () {
+    $("#hash").submit(function(e) {
+        e.preventDefault();
+        var $choice = $(this).find("input[name='hash']");
+        console.log($choice.val());
+        if ($choice.length)
+            window.location = $choice.val();
+    });
+})
+</script>
+
+<div class="row">
+    <div class="col-md-6" style="border-right: 1px dashed #ddd;">
+        <h2 style="text-align: center;">扫描结果 1</h2>
+
+        {% include "compare/_info.html" with record=left %}
+    </div>
+    <div class="col-md-6">
+        <h2 style="text-align: center;">扫描结果 2</h2>
+
+        <p>您需要选择另一次扫描结果进行比较。</p>
+        {% if records.count > 0 %}
+            <p>以下是该文件的其它扫描结果:</p>
+            {% include "compare/_summary_table.html" %}
+        {% else %}
+            <p><b>该文件无其他扫描结果。</b></p>
+        {% endif %}
+<!--
+        <p>如果您想要与不同文件进行对比，请提供另一个文件的MD5:</p>
+        <form class="form-inline" action="#" id="hash">
+            <input class="form-control" type="text" name="hash" /> <button type="submit" class="btn btn-primary btn-small">搜索</button>
+        </form>
+-->
+    </div>
+</div>
+{% endblock %}

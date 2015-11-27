@@ -1,0 +1,21 @@
+<table class="table table-bordered" style="table-layout: fixed;">
+    <thead>
+        <tr>
+            <th width="8%">时间</th>
+            <th width="5%">TID</th>
+            <th width="8%">调用内存</th>
+            <th width="15%">API</th>
+            <th width="42%">信息参数</th>
+            <th width="5%">状态</th>
+            <th width="11%">返回值</th>
+            <th width="6%">重复次数</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for call in chunk.calls %}
+        <tr class="{{call.category}}" id="call_{{call.id}}">
+            {% include "analysis/behavior/_api_call.html" %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

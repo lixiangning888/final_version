@@ -1,0 +1,40 @@
+<div class="panel panel-default" style="width: 30%;">
+    <table class="table table-striped" style="table-layout: fixed;">
+      {% if config.jsondump %}
+        <tr>
+          <th>JSON 格式报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "json" %}">下载</a></td>
+        </tr>
+      {% endif %}
+      {% if config.reporthtml %}
+        <tr>
+            <th>HTML 格式报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "html" %}">下载</a></td>
+        </tr>
+      {% endif %}
+      {% if config.reporthtmlsummary %}
+        <tr>
+            <th>HTML 总结报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "htmlsummary" %}">下载</a></td>
+        </tr>
+      {% endif %}
+      {% if config.reportpdf %}
+        <tr>
+            <th>PDF 格式报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "pdf" %}">下载</a></td>
+        </tr>
+      {% endif %}
+      {% if config.maec41 %}
+        <tr>
+            <th>MAEC 格式报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "maec" %}">下载</a></td>
+        </tr>
+      {% endif %}
+      {% if config.mmdef %}
+        <tr>
+            <th>Metadata 报告</th>
+            <td style="text-align: right;"><a class="btn btn-primary btn-small" href="{% url "analysis.views.filereport" analysis.info.base64id "metadata" %}">下载</a></td>
+        </tr>
+      {% endif %}
+    </table>
+</div>

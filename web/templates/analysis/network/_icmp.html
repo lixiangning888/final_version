@@ -1,0 +1,21 @@
+<h4>ICMP 流量</h4>
+{% if analysis.network.icmp %}
+<table class="table table-striped table-bordered" style="table-layout: fixed;">
+    <tr>
+        <th>源地址</th>
+        <th>目标地址</th>
+        <th>ICMP类型</th>
+        <th>数据</th>
+    </tr>
+    {% for packet in analysis.network.icmp %}
+    <tr>
+        <td style="word-wrap: break-word;">{{packet.src}}</td>
+        <td style="word-wrap: break-word;">{{packet.dst}}</td>
+        <td style="word-wrap: break-word;">{{packet.type}}</td>
+        <td style="word-wrap: break-word;">{{packet.data}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>无ICMP流量.</p>
+{% endif %}
