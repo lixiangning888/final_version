@@ -506,7 +506,7 @@ def report(request, task_id):
                         addval["id"] = parts[0][:-4]
                         addval["proto"] = parts[2][:-4]
                         addval["distance"] = parts[3]
-                        if addval["id"] == task_id:
+                        if addval["id"] == decrpt_task_id:
                             ourclassname = classname
                         else:
                             classes[classname].append(addval)

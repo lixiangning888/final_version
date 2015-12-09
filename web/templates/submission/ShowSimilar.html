@@ -47,11 +47,11 @@
 
 
 <div class="alert alert-info" style="text-align: center;font-size: 22px;">
-     此文件已存在于样本库，如需继续扫描请点击下面分析按钮。
+      魔盾安全已有该文件的分析结果供您参考。如仍然需要分析，请点击重新分析。
     <div class="row">
         <div class="col-xs-12">
             <div class="right">
-                <a href="#" onclick="analysis()" class="scanbutton">分析</a>
+                <a href="#" onclick="analysis()" class="scanbutton">重新分析</a>
             </div>
         </div>
 <!--    <div class="col-xs-6">
@@ -64,23 +64,23 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="panel-title">扫描过的文件</h3>
+        <h3 class="panel-title">文件历史分析结果</h3>
     </div>
         {% if tasks %}
     <table class="table table-striped" style="table-layout: fixed;">
         <thead>
         <tr>
             <th>提交时间</th>
-            <th>扫描类型</th>
-            <th>平台</th>
-            <th>扫描目标</th>
+            <th>分析类型</th>
+            <th>虚拟机</th>
+            <th>分析目标</th>
         </tr>
         </thead>
         <tbody>
         {% for task in tasks %}
             <tr>
                 <td>
-                   <span class="muted">{{task.ended}} (added on)</span>
+                   <span class="muted">{{task.ended}} </span>
                 </td>
                 <td>
         {% if task.category == "file" %}
@@ -105,7 +105,7 @@
         </tbody>
     </table>
     {% else %}
-    <div class="panel-body">还没有已经扫描过的文件.</div>
+    <div class="panel-body">还没有相同文件的分析结果.</div>
     {% endif %}
 </div>
 <script type="text/javascript">

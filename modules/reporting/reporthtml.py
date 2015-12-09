@@ -2,6 +2,9 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 import os
 import codecs
 import base64

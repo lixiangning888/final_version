@@ -55,7 +55,7 @@
             <li> <a href="{% url 'account.views.index' %}"> 注册</a> </li>
             {% else %}
             <li class="dropdown">
-                <a id="user_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">{{ user }}</a>
+                <a id="user_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">{{ user }} <b class="caret"></b></a>
                 <ul class="dropdown-menu" aria-labelledby="user_dropdown">
                     <li><a href="{% url "account.views.profile" %}">我的信息</a></li>
                     <li role="separator" class="divider"></li>

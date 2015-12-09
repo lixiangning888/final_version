@@ -9,6 +9,7 @@
               <li><a href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>哈希(Hash)</a></li>
               <li><a href="#tab5" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>模糊哈希</a></li>
               <li><a href="#tab6" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>Yara</a></li>
+              <li><a href="#tab7" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>Malheur</a></li>
          </ul>
          <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
@@ -60,6 +61,13 @@
 			<p>魔盾安全扫描装载了Yara扫描引擎，并集成了Yara全球社区及魔盾安全扫描开发的Yara规则，以帮助用户对恶意软件的特征进行判断。</p>
 
 			<p>想了解Yara的具体信息，请访问：<a href="https://code.google.com/p/yara-project">Yara 项目</a>， 或 <a href="https://github.com/Yara-Rules/rules"> Yara 规则</a>。</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab7">
+                        <p>Malheur最初是由德国哥廷根大学的Konrad Rieck开发的一种创新的自动化的恶意软件分析工具,它在沙箱(sandbox)中记录恶意软件的程序行为并进行自动化分析。Malheur是一种启发式引擎，它基于文件的启发式扫描技术，可以根据文件属性，检测常规的未知恶意软件。Malheur能够识别具有类似行为的恶意软件，从而帮助发现未知的恶意软件和对新的恶意软件进行分类</p>
+
+			<p>魔盾扫描将Malheur分析集成在沙盒扫描中。当用户提交的恶意软件二进制文件在魔盾沙盒系统中执行时，文件的行为被监控和记录。Malheur对这些行为记录进行分析，发现和使用机器学习识别恶意软件类型，对于已扫描的类似的恶意软件分析，Malheur可以智能的将它们聚合起来。</p>
+
+			<p>想了解关于Malheur的具体信息，请访问：<a href="http://www.mlsec.org/malheur/">Malheur - Automatic Analysis of Malware Behavior</a></p>
                     </div>
          </div>
 

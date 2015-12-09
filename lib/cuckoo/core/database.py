@@ -3,6 +3,9 @@
 # See the file 'docs/LICENSE' for copying permission.
 
 import os
+import sys
+#reload(sys)
+#sys.setdefaultencoding("utf-8")
 import json
 import logging
 from datetime import datetime, timedelta
@@ -433,7 +436,7 @@ class Database(object):
                 # See: http://www.postgresql.org/docs/9.0/static/libpq-ssl.html#LIBPQ-SSL-SSLMODE-STATEMENTS
                 self.engine = create_engine(connection_string, connect_args={"sslmode": "disable"})
             else:
-                self.engine = create_engine(connection_string)
+                self.engine = create_engine(connection_string, encoding='utf-8', echo=True)
         except ImportError as e:
             lib = e.message.split()[-1]
             raise CuckooDependencyError("Missing database driver, unable to "
@@ -851,6 +854,10 @@ class Database(object):
             priority = 1
 
         if isinstance(obj, File):
+            print "object file type"
+            print obj.get_type()
+            print "object file path"
+            print obj.file_path
             file_type = obj.get_type()
             sample = Sample(md5=obj.get_md5(),
                             crc32=obj.get_crc32(),
@@ -927,6 +934,7 @@ class Database(object):
         else:
             task.clock = datetime.now()
         print "current task is %s" % task
+        print task.__dict__
         session.add(task)
 
         try:
@@ -959,6 +967,8 @@ class Database(object):
         @param clock: virtual machine clock time
         @return: cursor or None.
         """
+        print "here is add path"
+        print file_path
         if not file_path or not os.path.exists(file_path):
             log.warning("File does not exist: %s.", file_path)
             return None

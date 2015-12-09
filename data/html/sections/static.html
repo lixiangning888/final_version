@@ -1,86 +1,86 @@
 <section id="static">
     <div class="section-title">
-        <h4>Static Analysis</h4>
+        <h4>静态分析</h4>
     </div>
         {% if results.static and results.static.pe %}
             <div>
                 {% if summary_report %}
-                <h4>PE Information</h4>
+                <h4>PE 信息</h4>
                 <div id="pe_information">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_information');">PE Information</a></h4>
+                <h4><a href="javascript:showHide('pe_information');">PE 信息</a></h4>
                 <div id="pe_information" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered" style="table-layout: fixed;">
                         {% if results.static.pe.imagebase %}
                             <tr>
-                                <th style="width: 15%;">Image Base</th>
+                                <th style="width: 15%;">初始地址</th>
                                 <td>{{results.static.pe.imagebase}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.entrypoint %}
                             <tr>
-                                <th style="width: 15%;">Entry Point</th>
+                                <th style="width: 15%;">入口地址</th>
                                 <td>{{results.static.pe.entrypoint}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.reported_checksum %}
                             <tr>
-                                <th style="width: 15%;">Reported Checksum</th>
+                                <th style="width: 15%;">声明校验值</th>
                                 <td>{{results.static.pe.reported_checksum}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.actual_checksum %}
                             <tr>
-                                <th style="width: 15%;">Actual Checksum</th>
+                                <th style="width: 15%;">实际校验值</th>
                                 <td>{{results.static.pe.actual_checksum}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.osversion %}
                             <tr>
-                                <th style="width: 15%;">Minimum OS Version</th>
+                                <th style="width: 15%;">最低操作系统版本要求</th>
                                 <td>{{results.static.pe.osversion}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.pdbpath %}
                             <tr>
-                                <th style="width: 15%;">PDB Path</th>
+                                <th style="width: 15%;">PDB路径</th>
                                 <td>{{results.static.pe.pdbpath}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.timestamp %}
                             <tr>
-                                <th style="width: 15%;">Compile Time</th>
+                                <th style="width: 15%;">编译时间</th>
                                 <td>{{results.static.pe.timestamp}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.imphash %}
                             <tr>
-                                <th style="width: 15%;">Import Hash</th>
+                                <th style="width: 15%;">载入哈希</th>
                                 <td>{{results.static.pe.imphash}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.icon %}
                             <tr>
-                                <th style="width: 15%;">Icon</th>
+                                <th style="width: 15%;">图标</th>
                                 <td><img src="data:image/jpeg;base64,{{results.static.pe.icon}}"/></td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.icon_hash %}
                             <tr>
-                                <th style="width: 15%;">Icon Exact Hash</th>
+                                <th style="width: 15%;">图标精确哈希值</th>
                                 <td>{{results.static.pe.icon_hash}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.icon_fuzzy %}
                             <tr>
-                                <th style="width: 15%;">Icon Similarity Hash</th>
+                                <th style="width: 15%;">图标相似性哈希值</th>
                                 <td>{{results.static.pe.icon_fuzzy}}</td>
                             </tr>
                         {% endif %}
                         {% if results.static.pe.exported_dll_name %}
                             <tr>
-                                <th style="width: 15%;">Exported DLL Name</th>
+                                <th style="width: 15%;">导出DLL库名称</th>
                                 <td>{{results.static.pe.exported_dll_name}}</td>
                             </tr>
                         {% endif %}
@@ -92,10 +92,10 @@
         {% if results.static.pe.versioninfo %}
             <div>
                 {% if summary_report %}
-                <h4>Version Infos</h4>
+                <h4>版本信息</h4>
                 <div id="pe_versioninfo">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_versioninfo');">Version Infos</a></h4>
+                <h4><a href="javascript:showHide('pe_versioninfo');">版本信息</a></h4>
                 <div id="pe_versioninfo" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered">
@@ -119,20 +119,20 @@
         {% if results.static.pe.sections %}
             <div>
                 {% if summary_report %}
-                <h4>Sections</h4>
+                <h4>PE数据组成</h4>
                 <div id="pe_sections">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_sections');">Sections</a></h4>
+                <h4><a href="javascript:showHide('pe_sections');">PE数据组成</a></h4>
                 <div id="pe_sections" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered">
                         <tr>
-                            <th>Name</th>
-                            <th>Virtual Address</th>
-                            <th>Virtual Size</th>
-                            <th>Size of Raw Data</th>
-                            <th>Characteristics</th>
-                            <th>Entropy</th>
+                            <th>名称</th>
+                            <th>虚拟地址</th>
+                            <th>虚拟大小</th>
+                            <th>原始数据大小</th>
+                            <th>特征</th>
+                            <th>熵(Entropy)</th>
                         </tr>
                         {% for section in results.static.pe.sections %}
                             <tr>
@@ -152,10 +152,10 @@
         {% if results.static.pe.overlay %}
             <div>
                 {% if summary_report %}
-                <h4>Overlay</h4>
+                <h4>覆盖</h4>
                 <div id="pe_overlay">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_overlay');">Overlay</a></h4>
+                <h4><a href="javascript:showHide('pe_overlay');">覆盖</a></h4>
                 <div id="pe_overlay" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered">
@@ -164,11 +164,11 @@
                             <col width="*" />
                         </colgroup>
                         <tr>
-                            <td><strong>Offset</strong>:</td>
+                            <td><strong>偏移量</strong>:</td>
                             <td>{{results.static.pe.overlay.offset}}</td>
                         </tr>
                         <tr>
-                            <td><strong>Size</strong>:</td>
+                            <td><strong>大小</strong>:</td>
                             <td>{{results.static.pe.overlay.size}}</td>
                         </tr>
                     </table>
@@ -179,21 +179,21 @@
         {% if results.static.pe.resources %}
             <div>
                 {% if summary_report %}
-                <h4>Resources</h4>
+                <h4>资源</h4>
                 <div id="pe_resources">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_resources');">Resources</a></h4>
+                <h4><a href="javascript:showHide('pe_resources');">资源</a></h4>
                 <div id="pe_resources" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered">
                         <tr>
-                            <th>Name</th>
-                            <th>Offset</th>
-                            <th>Size</th>
-                            <th>Language</th>
-                            <th>Sub-language</th>
-                            <th>Entropy</th>
-                            <th>File type</th>
+                            <th>名称</th>
+                            <th>偏移量</th>
+                            <th>大小</th>
+                            <th>语言</th>
+                            <th>子语言</th>
+                            <th>熵(Entropy)</th>
+                            <th>文件类型</th>
                         </tr>
                         {% for section in results.static.pe.resources %}
                             <tr>
@@ -214,15 +214,15 @@
         {% if results.static.pe.imports %}
             <div>
                 {% if summary_report %}
-                <h4>Imports</h4>
+                <h4>导入</h4>
                 <div id="pe_imports">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_imports');">Imports</a></h4>
+                <h4><a href="javascript:showHide('pe_imports');">导入</a></h4>
                 <div id="pe_imports" style="display: none;">
                 {% endif %}
                     {% for library in results.static.pe.imports %}
                         <div class="well">
-                            <div><strong>Library {{library.dll}}</strong>:</div>
+                            <div><strong>库 {{library.dll}}</strong>:</div>
                             {% for function in library.imports %}
                                 <div>&bull; <span class="mono">{{function.address}}</span> - {{function.name}}</div>
                             {% endfor %}
@@ -235,17 +235,17 @@
         {% if results.static.pe.exports %}
             <div>
                 {% if summary_report %}
-                <h4>Exports</h4>
+                <h4>导出</h4>
                 <div id="pe_exports">
                 {% else %}
-                <h4><a href="javascript:showHide('pe_exports');">Exports</a></h4>
+                <h4><a href="javascript:showHide('pe_exports');">导出</a></h4>
                 <div id="pe_exports" style="display: none;">
                 {% endif %}
                     <table class="table table-striped table-bordered">
                         <tr>
-                            <th>Ordinal</th>
-                            <th>Address</th>
-                            <th>Name</th>
+                            <th>序列</th>
+                            <th>地址</th>
+                            <th>名称</th>
                         </tr>
                         {% for export in results.static.pe.exports %}
                             <tr>
@@ -262,7 +262,7 @@
 
     {% if results.strings and not summary_report %}
             <div>
-                <h4><a href="javascript:showHide('strings');">Strings</a></h4>
+                <h4><a href="javascript:showHide('strings');">字符串</a></h4>
                 <div id="strings" style="display: none;">
                     {% for str in results.strings %}
                         <div><span class="mono">{{str}}</span></div>
@@ -272,6 +272,6 @@
     {% endif %}
 
     {% if not results.strings and not results.static %}
-        Nothing to display.
+        无信息
     {% endif %}
 </section>

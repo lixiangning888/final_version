@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Cuckoo Sandbox</title>
+<title>魔盾安全扫描报告</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -104,20 +104,20 @@ img.fade:hover {
             <div class="container-fluid">
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li><a href="#info">Info</a></li>
+                        <li><a href="#info">扫描信息</a></li>
                         {% if results.info.category == "file" %}
-                        <li><a href="#file">File</a></li>
+                        <li><a href="#file">文件</a></li>
                         {% elif results.info.category == "url" %}
                         <li><a href="#url">URL</a></li>
                         {% endif %}
-                        <li><a href="#signatures">Signatures</a></li>
-                        <li><a href="#screenshots">Screenshots</a></li>
-                        <li><a href="#network">Network</a></li>
+                        <li><a href="#signatures">特征</a></li>
+                        <li><a href="#screenshots">运行截图</a></li>
+                        <li><a href="#network">网络分析</a></li>
                         {% if results.info.category == "file" %}
-                        <li><a href="#static">Static</a></li>
+                        <li><a href="#static">静态分析</a></li>
                         {% endif %}
-                        <li><a href="#dropped">Dropped</a></li>
-                        <li><a href="#behavior">Behavior</a></li>
+                        <li><a href="#dropped">投放文件</a></li>
+                        <li><a href="#behavior">行为分析</a></li>
                         <li><a href="#volatility">Volatility</a></li>
                         <!-- BOTTLEREMOVEME <li><a href="/pcap/{{results.info.id}}">PCAP</a></li> BOTTLEREMOVEME -->
                         <!-- BOTTLEREMOVEME <li><a href="/view/{{results.info.id}}/download">Download Report</a></li> BOTTLEREMOVEME -->
@@ -132,9 +132,9 @@ img.fade:hover {
 
     <footer class="footer">
         {% if not summary_report %}
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right"><a href="#">回到顶部</a></p>
         {% endif %}
-        <p>&copy;2010-2015 <a href="http://www.cuckoosandbox.org">Cuckoo Sandbox</a>, Optiv, Inc.</p>
+        <p>&copy;2015 <a href="http://www.maldun.com" target="_blank">上海魔盾信息科技有限公司</a></p>
     </footer>
 </div>
 <script>

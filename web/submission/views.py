@@ -4,6 +4,8 @@
 
 import os
 import sys
+#reload(sys)
+#sys.setdefaultencoding("utf-8")
 
 import requests
 import tempfile
@@ -576,6 +578,7 @@ def submit_file(request):
     
                 # Moving sample from django temporary file to Cuckoo temporary storage to
                 # let it persist between reboot (if user like to configure it in that way).
+                print type(sample.name)
                 path = store_temp_file(sample.read(),
                                        sample.name)
                 pp.pprint("\nFile Path is %s\n" % path)
@@ -756,9 +759,9 @@ def ajax_submit_file(request):
         print "AJAX SUBMIT FILE TAMP FILE PATH %s" % tempfilePath
         if tempfilePath:
             for entry in task_machines:
+                print type(tempfilePath)
                 print "AJAX LIST MACHINE NAME %s" % entry
-                task_ids_new = db.demux_sample_and_add_to_db(file_path=tempfilePath, package=package, timeout=timeout, options=options, priority=priority,
-                                                         machine=entry, custom=custom, memory=memory, enforce_timeout=enforce_timeout, tags=tags, clock=clock, user_status=status, user_id=user_id)
+                task_ids_new = db.demux_sample_and_add_to_db(file_path=tempfilePath, package=package, timeout=timeout, options=options, priority=priority, machine=entry, custom=custom, memory=memory, enforce_timeout=enforce_timeout, tags=tags, clock=clock, user_status=status, user_id=user_id)
             #pp.pprint(task_ids_new)
             final_task_ids=[]
             for taskId in task_ids_new:
